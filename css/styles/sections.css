@@ -370,6 +370,8 @@
   font-size: 1.35rem;
 }
 .section-faith {
+  height: auto;
+  padding: clamp(5rem, 9vw, 9rem) 0;
   background:
     linear-gradient(135deg, rgba(157, 93, 82, 0.1), transparent 45%),
     var(--bg-soft);
@@ -378,7 +380,14 @@
   position: sticky;
   top: calc(var(--header-height) + 40px);
 }
+.faith-grid {
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(3rem, 7vw, 7rem);
+  align-items: start;
+}
 .prayer-card {
+  width: 100%;
+  max-width: 680px;
   padding: clamp(32px, 5vw, 58px);
   border-radius: var(--radius-lg);
   background: var(--dark);
@@ -386,11 +395,16 @@
   box-shadow: var(--shadow);
 }
 .prayer-card p {
-  margin: 0 0 28px;
+  margin: 0 0 1.35rem;
   color: #c9bdb5;
   font-family: "Playfair Display", serif;
   font-size: 1.35rem;
-  line-height: 1.65;
+  line-height: 1.8;
+  text-align: left;
+}
+.prayer-card .prayer-emphasis {
+  color: #f8f2ed;
+  font-size: clamp(1.45rem, 2.2vw, 1.8rem);
 }
 .prayer-card strong {
   display: block;
@@ -403,6 +417,8 @@
 .prayer-note {
   display: block;
   margin-top: 34px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
   color: #9f948c;
   font-size: 0.8rem;
   font-style: italic;
