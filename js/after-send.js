@@ -261,6 +261,8 @@ function renderHistory() {
         field("O que aconteceu depois", later.outcome)
       }${field("Minha preocupação se confirmou?", later.confirmed)}${
         field("Como vejo a mensagem agora", later.currentView)
+      }${field("Apareceu informação nova?", later.newInformation)}${
+        field("O que ainda continua sem resposta", later.stillUnknown)
       }${field("O que aprendi", later.learning)}</div>
       <div class="message-entry-actions"><button type="button" class="text-button toggle-message-entry"><i class="ri-arrow-down-s-line"></i> Ver reflexão completa</button><button type="button" class="text-button revisit-message-entry"><i class="ri-history-line"></i> Revisitar depois</button><button type="button" class="text-button delete-message-entry"><i class="ri-delete-bin-line"></i> Excluir registro</button></div>
       <form class="revisit-panel" hidden><h5>O que aconteceu depois?</h5><label class="after-field">O que aconteceu depois?<textarea name="outcome" rows="3">${
@@ -275,6 +277,10 @@ function renderHistory() {
         ).join("")
       }</div></fieldset><div class="revisit-grid"><label class="after-field">Olhando agora, como vejo aquela mensagem?<textarea name="currentView" rows="3">${
         escapeHtml(later.currentView)
+      }</textarea></label><label class="after-field">Apareceu informação nova?<textarea name="newInformation" rows="3">${
+        escapeHtml(later.newInformation)
+      }</textarea></label><label class="after-field">O que ainda continua sem resposta?<textarea name="stillUnknown" rows="3">${
+        escapeHtml(later.stillUnknown)
       }</textarea></label><label class="after-field">O que aprendi com essa situação?<textarea name="learning" rows="3">${
         escapeHtml(later.learning)
       }</textarea></label></div><button class="button button-primary save-revisit" type="submit">Guardar atualização</button></form>
@@ -366,6 +372,8 @@ history.addEventListener("submit", (event) => {
           outcome: $('[name="outcome"]', panel).value.trim(),
           confirmed,
           currentView: $('[name="currentView"]', panel).value.trim(),
+          newInformation: $('[name="newInformation"]', panel).value.trim(),
+          stillUnknown: $('[name="stillUnknown"]', panel).value.trim(),
           learning: $('[name="learning"]', panel).value.trim(),
           updatedAt: new Date().toISOString(),
         },

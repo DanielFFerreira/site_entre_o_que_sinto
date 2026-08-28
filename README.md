@@ -13,6 +13,7 @@ Site pessoal em HTML, CSS e JavaScript puro, com ícones da biblioteca Remix Ico
 - css/styles/response-hands.css — seção sobre permitir que a outra pessoa escolha
 - css/styles/revolt.css — seção e ferramentas “Quando eu me revolto”
 - css/styles/distance.css — seção e registros “Quando penso em me afastar”
+- css/styles/final-review.css — atualização do episódio e síntese final
 - css/styles/responsive.css — animações e media queries
 - js/main.js
 - js/after-send.js — interações, registros e histórico da nova seção
