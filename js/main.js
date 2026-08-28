@@ -93,7 +93,11 @@ const insightStats = document.querySelector("#insightStats");
 const insightNote = document.querySelector("#insightNote");
 const formMessage = document.querySelector("#formMessage");
 const clearJournal = document.querySelector("#clearJournal");
+const therapyNotes = document.querySelector("#therapyNotes");
+const saveTherapyNotes = document.querySelector("#saveTherapyNotes");
+const therapyNotesMessage = document.querySelector("#therapyNotesMessage");
 const STORAGE_KEY = "entre-o-que-sinto-journal";
+const THERAPY_NOTES_KEY = "entre-o-que-sinto-therapy-notes";
 
 function getIntensityLabel(value) {
   if (value <= 3) return "Leve";
@@ -358,6 +362,16 @@ clearJournal.addEventListener("click", () => {
   localStorage.removeItem(STORAGE_KEY);
   renderEntries();
   renderInsights();
+});
+
+therapyNotes.value = localStorage.getItem(THERAPY_NOTES_KEY) || "";
+
+saveTherapyNotes.addEventListener("click", () => {
+  localStorage.setItem(THERAPY_NOTES_KEY, therapyNotes.value.trim());
+  therapyNotesMessage.textContent = "Anotações guardadas neste navegador.";
+  window.setTimeout(() => {
+    therapyNotesMessage.textContent = "";
+  }, 3200);
 });
 
 updateIntensity();

@@ -512,6 +512,13 @@ button {
 .psycho-question:last-child {
   border-bottom: 0;
 }
+.psycho-question-featured {
+  margin: 8px -14px;
+  padding: 24px 14px;
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--accent) 9%, transparent);
+}
 .psycho-question span {
   color: var(--accent);
   font-size: 0.74rem;
@@ -1109,6 +1116,118 @@ button {
   from { opacity: 0; transform: translateY(-6px); }
   to { opacity: 1; transform: translateY(0); }
 }
+.therapy-section {
+  background: var(--bg-soft);
+}
+.therapy-grid {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 64px;
+  align-items: start;
+}
+.therapy-grid .section-heading {
+  position: sticky;
+  top: calc(var(--header-height) + 40px);
+}
+.therapy-notes {
+  display: grid;
+  gap: 12px;
+}
+.therapy-notes p {
+  position: relative;
+  margin: 0;
+  padding: 18px 22px 18px 48px;
+  border-bottom: 1px solid var(--line);
+  font-family: "Playfair Display", serif;
+  font-size: 1.22rem;
+  line-height: 1.4;
+}
+.therapy-notes p::before {
+  content: "?";
+  position: absolute;
+  left: 16px;
+  color: var(--accent);
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.therapy-extra {
+  grid-column: 2;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+.therapy-extra > label {
+  display: block;
+  margin-bottom: 12px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+.therapy-extra textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 17px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  outline: none;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+.therapy-extra textarea:focus {
+  border-color: var(--accent);
+}
+.therapy-save-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+.therapy-save-row .form-message {
+  margin: 0;
+}
+.therapy-extra > .field-help {
+  margin: 12px 0 0;
+}
+.unknown-section {
+  background: var(--bg);
+}
+.unknown-inner {
+  max-width: 900px;
+  text-align: center;
+}
+.unknown-inner h2 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+.unknown-list {
+  max-width: 680px;
+  margin: 56px auto;
+}
+.unknown-list p {
+  margin: 0;
+  padding: 17px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.15rem, 2.3vw, 1.5rem);
+}
+.unknown-inner > strong {
+  display: block;
+  max-width: 720px;
+  margin: 0 auto;
+  color: var(--accent);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 600;
+  line-height: 1.35;
+}
 .closing {
   background: var(--dark);
   color: #fff;
@@ -1215,6 +1334,15 @@ button {
   .faith-copy {
     position: static;
   }
+  .therapy-grid {
+    grid-template-columns: 1fr;
+  }
+  .therapy-grid .section-heading {
+    position: static;
+  }
+  .therapy-extra {
+    grid-column: auto;
+  }
   .certainty-options {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1310,5 +1438,12 @@ button {
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .therapy-extra {
+    padding: 24px;
+  }
+  .therapy-save-row {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
