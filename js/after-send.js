@@ -149,7 +149,8 @@ $$("#messageBodyOptions button").forEach((button) => {
 });
 
 const therapyNotes = $("#afterTherapyNotes");
-therapyNotes.value = localStorage.getItem(NOTES_KEY) || "";
+const savedAfterTherapyNotes = localStorage.getItem(NOTES_KEY);
+if (savedAfterTherapyNotes !== null) therapyNotes.value = savedAfterTherapyNotes;
 $("#saveAfterTherapyNotes").addEventListener("click", () => {
   localStorage.setItem(NOTES_KEY, therapyNotes.value.trim());
   const message = $("#afterTherapyMessage");

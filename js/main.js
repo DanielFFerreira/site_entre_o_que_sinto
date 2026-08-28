@@ -364,7 +364,8 @@ clearJournal.addEventListener("click", () => {
   renderInsights();
 });
 
-therapyNotes.value = localStorage.getItem(THERAPY_NOTES_KEY) || "";
+const savedTherapyNotes = localStorage.getItem(THERAPY_NOTES_KEY);
+if (savedTherapyNotes !== null) therapyNotes.value = savedTherapyNotes;
 
 saveTherapyNotes.addEventListener("click", () => {
   localStorage.setItem(THERAPY_NOTES_KEY, therapyNotes.value.trim());
