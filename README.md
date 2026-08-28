@@ -12,11 +12,13 @@ Site pessoal em HTML, CSS e JavaScript puro, com ícones da biblioteca Remix Ico
 - css/styles/after-send.css — seção e ferramentas “Depois que eu envio”
 - css/styles/response-hands.css — seção sobre permitir que a outra pessoa escolha
 - css/styles/revolt.css — seção e ferramentas “Quando eu me revolto”
+- css/styles/distance.css — seção e registros “Quando penso em me afastar”
 - css/styles/responsive.css — animações e media queries
 - js/main.js
 - js/after-send.js — interações, registros e histórico da nova seção
 - js/response-hands.js — estados e registros de “Quando a resposta não está mais nas minhas mãos”
 - js/revolt.js — desabafos privados, registros e revisão posterior da revolta
+- js/distance.js — padrões, decisões e revisões sobre afastamento
 
 ## Dependências externas
 - Google Fonts (DM Sans e Playfair Display)
