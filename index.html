@@ -4931,31 +4931,55 @@ Não estou fazendo isso por raiva nem como punição. Só preciso cuidar um pouc
         </div>
       </section>
 
+      <section class="section reflection-library-section" id="respostas-completas">
+        <div class="container final-review-container">
+          <header class="section-heading reveal">
+            <span class="eyebrow">Meu mapa de respostas</span>
+            <h2>O que consigo responder hoje.</h2>
+            <p>
+              Estas respostas não tentam prever o futuro nem falar por Juliane.
+              Elas registram o que consigo reconhecer em mim, o que os fatos
+              sustentam e aquilo que ainda preciso compreender.
+            </p>
+          </header>
+          <nav class="answer-filter reveal" aria-label="Filtrar respostas">
+            <button class="choice-chip is-active" type="button" data-answer-filter="todas">Todas</button>
+            <button class="choice-chip" type="button" data-answer-filter="sentimento">Sentimentos</button>
+            <button class="choice-chip" type="button" data-answer-filter="incerteza">Incerteza</button>
+            <button class="choice-chip" type="button" data-answer-filter="limites">Limites</button>
+            <button class="choice-chip" type="button" data-answer-filter="realidade">Realidade</button>
+          </nav>
+          <div id="completeAnswers" class="complete-answers" aria-live="polite"></div>
+          <section class="difficult-answers reveal" aria-labelledby="difficultAnswersTitle">
+            <header>
+              <span class="eyebrow">Respostas que doem</span>
+              <h3 id="difficultAnswersTitle">Também preciso conseguir olhar para respostas que talvez eu não queira.</h3>
+            </header>
+            <div class="difficult-answer-grid">
+              <article><small>Se ela disser que gosta de mim somente como amigo?</small><p>Vai me machucar porque meu sentimento não é neutro. Preciso respeitar se essa for a verdade dela e descobrir qual proximidade consigo manter sem me machucar.</p></article>
+              <article><small>Se ela disser que quer tentar?</small><p>Eu ficaria muito feliz, mas isso não seria um final feliz automático. Precisaríamos conversar sobre presente, expectativas, limites, ritmo e o que cada um deseja construir.</p></article>
+              <article><small>Se ela disser que ainda não sabe?</small><p>Precisarei decidir quanto tempo e de que maneira consigo conviver com a indefinição sem suspender minha vida.</p></article>
+              <article><small>Se nunca houver a resposta que eu quero?</small><p>Vou precisar viver o luto por essa possibilidade e continuar. Não é o que desejo, mas quero respeitar uma realidade diferente da minha esperança.</p></article>
+            </div>
+          </section>
+        </div>
+      </section>
+
       <section class="section unknown-section" id="nao-sei">
         <div class="container unknown-inner reveal">
           <span class="eyebrow">O que eu ainda não sei</span>
-          <h2>E algumas coisas continuam abertas.</h2>
-          <div class="unknown-list">
-            <p>Por que ser escolhido por ela significa tanto para mim?</p>
-            <p>Por que a incerteza mexe tanto comigo?</p>
-            <p>Por que posso me arrepender depois de demonstrar o que quero?</p>
-            <p>
-              Por que tento corrigir situações antes de saber se algo está
-              errado?
-            </p>
-            <p>Por que posso passar da esperança para a revolta?</p>
-            <p>Quando penso em bloquear, o que tento interromper?</p>
-            <p>Qual é meu limite emocional nessa aproximação?</p>
-            <p>Eu conseguiria sustentar apenas amizade?</p>
-            <p>Quanto tempo consigo permanecer em uma situação indefinida?</p>
-            <p>
-              Como reconhecer reciprocidade sem transformar gestos em prova?
-            </p>
-            <p>Como gostar sem fazer meu equilíbrio depender da resposta?</p>
-            <p>Como suportar o não saber?</p>
+          <h2>“Ainda não sei” também é uma resposta.</h2>
+          <div class="unknown-list developed-unknowns">
+            <article><span>O que percebo até aqui</span><p>Ser escolhido por ela reúne sentimento, nossa história e esperança. Ainda não sei quanto existe também de necessidade de validação.</p></article>
+            <article><span>O que percebo até aqui</span><p>A incerteza me mobiliza porque deixa aberto um resultado que desejo. Tento preencher esse espaço com interpretações para sentir algum controle.</p></article>
+            <article><span>O que percebo até aqui</span><p>Quando demonstro o que quero, fico vulnerável à resposta do outro. Às vezes chamo essa vulnerabilidade de arrependimento.</p></article>
+            <article><span>O que percebo até aqui</span><p>Minha vontade de corrigir pode aparecer antes de qualquer evidência de erro. Quero entender por que preciso tão rapidamente da confirmação de que está tudo bem.</p></article>
+            <article><span>O que percebo até aqui</span><p>Posso passar da esperança à revolta quando esperar fica cansativo. A raiva parece oferecer ação e encerramento para algo que continua aberto.</p></article>
+            <article><span>Minha resposta hoje: ainda não sei</span><p>Quando penso em bloquear, talvez queira interromper a angústia, recuperar controle ou criar distância. Preciso reconhecer qual dessas coisas está acontecendo antes de agir.</p></article>
+            <article><span>Minha resposta hoje: ainda não sei</span><p>Meu limite não cabe em uma data pronta. Quero observá-lo pelo efeito dessa aproximação na minha rotina, no meu equilíbrio e na minha capacidade de respeitar a realidade.</p></article>
+            <article><span>Minha resposta hoje: ainda não sei</span><p>Tenho sentimentos e esperança além de uma amizade neutra. Preciso descobrir com tempo qual proximidade consigo sustentar sem me machucar.</p></article>
           </div>
-          <strong>Hoje eu não preciso inventar respostas para essas perguntas.
-            Posso levá-las comigo para a terapia.</strong>
+          <strong>Não estou deixando essas questões vazias: estou registrando o que já consigo perceber e levando o restante para a terapia.</strong>
         </div>
       </section>
 
@@ -5005,5 +5029,6 @@ Não estou fazendo isso por raiva nem como punição. Só preciso cuidar um pouc
     <script type="module" src="js/response-hands.js"></script>
     <script type="module" src="js/revolt.js"></script>
     <script type="module" src="js/distance.js"></script>
+    <script type="module" src="js/reflection-library.js"></script>
   </body>
 </html>

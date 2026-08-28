@@ -164,6 +164,130 @@
 .answers-today-grid strong {
   color: var(--accent);
 }
+
+.reflection-library-section {
+  background: var(--bg-soft);
+}
+
+.answer-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 2rem 0 1.5rem;
+}
+
+.answer-filter .choice-chip.is-active {
+  color: var(--surface);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.complete-answers {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.complete-answer {
+  align-self: start;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.complete-answer summary {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1rem 1.1rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.complete-answer summary::-webkit-details-marker {
+  display: none;
+}
+.complete-answer summary span,
+.complete-answer small {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.complete-answer h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+.complete-answer summary i {
+  font-size: 1.2rem;
+  transition: transform 180ms ease;
+}
+.complete-answer[open] summary i {
+  transform: rotate(45deg);
+}
+.complete-answer > div {
+  padding: 0 1.1rem 1.1rem 3.25rem;
+}
+.complete-answer p {
+  margin: 0.4rem 0 0;
+  line-height: 1.7;
+}
+
+.developed-unknowns article {
+  display: grid;
+  gap: 0.35rem;
+}
+.developed-unknowns span {
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.difficult-answers {
+  margin-top: clamp(3rem, 7vw, 5rem);
+  padding-top: clamp(2rem, 5vw, 3.5rem);
+  border-top: 1px solid var(--line);
+}
+.difficult-answers header {
+  max-width: 760px;
+  margin-bottom: 1.5rem;
+}
+.difficult-answer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.difficult-answer-grid article {
+  padding: clamp(1.2rem, 3vw, 1.8rem);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+.difficult-answer-grid small {
+  color: var(--accent);
+  font-weight: 700;
+}
+.difficult-answer-grid p {
+  margin: 0.65rem 0 0;
+  line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+  .complete-answers {
+    grid-template-columns: 1fr;
+  }
+  .difficult-answer-grid {
+    grid-template-columns: 1fr;
+  }
+  .complete-answer > div {
+    padding-left: 1.1rem;
+  }
+}
 .selected-meaning, .reciprocity-answer {
   margin-top: 50px;
   padding: clamp(30px, 5vw, 50px);
