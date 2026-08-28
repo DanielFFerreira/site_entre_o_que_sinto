@@ -560,6 +560,14 @@ button {
   font-family: "Playfair Display", serif;
   font-size: 1.6rem;
 }
+.prayer-note {
+  display: block;
+  margin-top: 34px;
+  color: #9f948c;
+  font-size: 0.8rem;
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
 .principles-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
