@@ -1,0 +1,295 @@
+/* Seção "Quando a resposta não está mais nas minhas mãos". */
+.response-hands-section {
+  background: var(--bg);
+}
+.response-hands-container {
+  max-width: 1080px;
+}
+.response-hands-intro {
+  max-width: 880px;
+  margin-bottom: 90px;
+}
+.response-hands-subtitle {
+  color: var(--text) !important;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem !important;
+}
+.cake-episode {
+  padding: clamp(30px, 6vw, 58px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+.cake-episode p {
+  color: var(--muted);
+}
+.cake-episode small, .cake-episode strong {
+  display: block;
+}
+.cake-episode small {
+  margin-top: 30px;
+  color: var(--muted);
+}
+.cake-episode strong {
+  margin-top: 8px;
+  color: var(--accent);
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+}
+.response-sequence b {
+  background: var(--bg);
+}
+.distinction-grid, .response-two-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.distinction-grid article {
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+.distinction-grid h4 {
+  margin: 0 0 14px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+}
+.distinction-grid p {
+  color: var(--muted);
+}
+.caught-phrase {
+  margin-top: 110px;
+  padding: clamp(38px, 7vw, 76px);
+  border-radius: var(--radius-lg);
+  background: var(--dark);
+  color: #f8f2ed;
+  text-align: center;
+}
+.caught-phrase blockquote {
+  margin: 14px 0 34px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.3rem, 5vw, 4.5rem);
+  line-height: 1.12;
+}
+.caught-phrase p {
+  color: #c9bdb5;
+}
+.caught-phrase > strong {
+  display: block;
+  color: #f4c2b7;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+.caught-phrase h3 {
+  margin: 48px 0 0;
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+}
+.honest-wish {
+  padding: 40px;
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+}
+.honest-wish > strong {
+  display: block;
+  margin-top: 28px;
+  color: var(--accent);
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+.response-two-columns {
+  align-items: start;
+  margin-top: 96px;
+}
+.response-two-columns .after-block {
+  margin-top: 0;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+}
+.response-two-columns .open-questions {
+  grid-template-columns: 1fr;
+}
+.my-freedom {
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-soft);
+}
+.freedom-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 28px 0;
+}
+.freedom-options span {
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+}
+.my-freedom > strong {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+}
+.waiting-urge, .necessary-action, .revisit-response {
+  padding: clamp(28px, 5vw, 48px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+.waiting-urge fieldset, .necessary-action fieldset, .revisit-response fieldset {
+  margin: 24px 0;
+  padding: 0;
+  border: 0;
+}
+.waiting-urge legend, .necessary-action legend, .revisit-response legend {
+  margin-bottom: 13px;
+  font-weight: 700;
+}
+.urge-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+.urge-options button {
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.urge-options button.is-active {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+.silence-interval {
+  margin-top: 110px;
+  padding: clamp(40px, 7vw, 76px);
+  text-align: center;
+}
+.silence-interval h3 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  line-height: 1;
+}
+.silence-interval > p {
+  max-width: 700px;
+  margin: 28px auto;
+  color: var(--muted);
+}
+.silence-interval .open-questions {
+  max-width: 780px;
+  margin: 30px auto;
+  text-align: left;
+}
+.silence-interval > strong {
+  display: block;
+  margin-top: 45px;
+  color: var(--accent);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+}
+.exercise-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.exercise-fields label {
+  font-weight: 700;
+}
+.exercise-fields textarea {
+  width: 100%;
+  margin-top: 8px;
+  padding: 15px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  outline: none;
+  resize: vertical;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+}
+.exercise-fields textarea:focus {
+  border-color: var(--accent);
+}
+.exercise-fields label:last-child:nth-child(odd) {
+  grid-column: 1/-1;
+}
+.no-strategy {
+  margin-top: 96px;
+  padding: clamp(34px, 6vw, 58px);
+  border-radius: var(--radius-lg);
+  background: var(--dark);
+  color: #f8f2ed;
+}
+.no-strategy h3 {
+  margin: 0 0 28px;
+  font-family: "Playfair Display", serif;
+  font-size: 2.3rem;
+}
+.no-strategy p {
+  color: #c9bdb5;
+}
+.no-strategy strong {
+  display: block;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f4c2b7;
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+}
+.deeper-question h3 {
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+}
+.deeper-question > blockquote {
+  margin: 35px auto;
+  color: #f4c2b7;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+}
+.deeper-question .open-questions {
+  text-align: left;
+}
+.therapy-response-form > .button, .revisit-response > .button {
+  margin-top: 24px;
+}
+.response-hands-closing {
+  max-width: 850px;
+  margin: 110px auto 0;
+  padding: 70px 30px;
+  text-align: center;
+}
+.response-hands-closing p {
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+.response-hands-closing strong {
+  display: block;
+  margin: 38px 0;
+  color: var(--accent);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.7rem, 6vw, 5rem);
+  line-height: 1;
+}
+@media (max-width: 720px) {
+  .distinction-grid, .response-two-columns, .exercise-fields {
+    grid-template-columns: 1fr;
+  }
+  .exercise-fields label:last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+  .honest-wish, .my-freedom {
+    padding: 26px;
+  }
+  .caught-phrase {
+    padding: 42px 24px;
+  }
+}

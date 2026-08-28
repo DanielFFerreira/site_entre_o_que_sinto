@@ -1,418 +1,3208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Um espaço pessoal sobre reencontro, afeto, ansiedade, fé, incerteza e amadurecimento.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Um espaço pessoal sobre reencontro, afeto, ansiedade, fé, incerteza e amadurecimento."
+    />
     <title>Entre o que sinto e o que não sei</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
     <div class="page-noise" aria-hidden="true"></div>
 
     <header class="site-header" id="topo">
-        <div class="container header-inner">
-            <a class="brand" href="#topo" aria-label="Voltar ao início">
-                <span class="brand-mark"><i class="ri-infinity-line" aria-hidden="true"></i></span>
-                <span>Entre o que sinto</span>
-            </a>
-            <button class="menu-button" id="menuButton" type="button" aria-label="Abrir menu" aria-controls="mainNav" aria-expanded="false"><i class="ri-menu-3-line" aria-hidden="true"></i></button>
-            <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
-                <a href="#sentimentos">Sentimentos</a>
-                <a href="#historia">Caminho</a>
-                <a href="#realidade">Fato x interpretação</a>
-                <a href="#psicanalise">Perguntas</a>
-                <a href="#fe">Fé</a>
-                <a href="#diario">Diário</a>
-                <a href="#terapia">Terapia</a>
-            </nav>
-            <button class="theme-button" id="themeButton" type="button" aria-label="Ativar tema escuro"><i class="ri-moon-line" aria-hidden="true"></i></button>
-        </div>
+      <div class="container header-inner">
+        <a class="brand" href="#topo" aria-label="Voltar ao início">
+          <span class="brand-mark"
+            ><i class="ri-infinity-line" aria-hidden="true"></i
+          ></span>
+          <span>Entre o que sinto</span>
+        </a>
+        <button
+          class="menu-button"
+          id="menuButton"
+          type="button"
+          aria-label="Abrir menu"
+          aria-controls="mainNav"
+          aria-expanded="false"
+        >
+          <i class="ri-menu-3-line" aria-hidden="true"></i>
+        </button>
+        <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+          <a href="#sentimentos">Sentimentos</a>
+          <a href="#historia">Caminho</a>
+          <a href="#realidade">Fato x interpretação</a>
+          <a href="#psicanalise">Perguntas</a>
+          <a href="#fe">Fé</a>
+          <a href="#diario">Diário</a>
+          <a href="#terapia">Terapia</a>
+        </nav>
+        <button
+          class="theme-button"
+          id="themeButton"
+          type="button"
+          aria-label="Ativar tema escuro"
+        >
+          <i class="ri-moon-line" aria-hidden="true"></i>
+        </button>
+      </div>
     </header>
 
     <main>
-        <section class="hero section">
-            <div class="container hero-grid">
-                <div class="hero-copy reveal">
-                    <span class="eyebrow">Um mapa do que acontece dentro de mim</span>
-                    <h1>Entre o que sinto<br><em>e o que não sei.</em></h1>
-                    <p class="hero-lead">Fiz este site porque estava difícil organizar tudo só na minha cabeça. Aqui tentei colocar o que aconteceu, o que estou sentindo, o que imagino e aquilo que ainda não consigo entender.</p>
-                    <div class="hero-actions">
-                        <a class="button button-primary" href="#sentimentos">Começar por aqui <i class="ri-arrow-down-line" aria-hidden="true"></i></a>
-                        <a class="button button-ghost" href="#realidade"><i class="ri-scales-3-line" aria-hidden="true"></i> Separar fato e interpretação</a>
-                    </div>
-                    <p class="hero-note">Este é um registro sobre mim. Não é uma tentativa de explicar, diagnosticar ou decidir o que Juliane sente.</p>
-                </div>
-                <div class="hero-orbit reveal" aria-hidden="true">
-                    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-                    <div class="orbit-center"><span>tentar</span><strong>me entender</strong></div>
-                    <span class="orbit-word word-one">esperança</span><span class="orbit-word word-two">medo</span><span class="orbit-word word-three">carinho</span><span class="orbit-word word-four">não sei</span>
-                </div>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Um mapa do que acontece dentro de mim</span>
+            <h1>Entre o que sinto<br /><em>e o que não sei.</em></h1>
+            <p class="hero-lead">
+              Fiz este site porque estava difícil organizar tudo só na minha
+              cabeça. Aqui tentei colocar o que aconteceu, o que estou sentindo,
+              o que imagino e aquilo que ainda não consigo entender.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#sentimentos"
+                >Começar por aqui
+                <i class="ri-arrow-down-line" aria-hidden="true"></i
+              ></a>
+              <a class="button button-ghost" href="#realidade"
+                ><i class="ri-scales-3-line" aria-hidden="true"></i> Separar
+                fato e interpretação</a
+              >
             </div>
-        </section>
-
-        <section class="section section-soft" id="sentimentos">
-            <div class="container">
-                <div class="section-heading reveal"><span class="eyebrow">O que está acontecendo comigo</span><h2>Não consigo simplesmente tirar ela da cabeça.</h2><p>Mesmo quando alguém diz que isso vai passar, para mim não parece tão simples. Tenho pensado muito nela. Tenho vontade de conversar, de vê-la e de entender o que está acontecendo entre nós. Às vezes uma coisa pequena muda bastante o meu dia.</p></div>
-                <div class="emotion-grid">
-                    <article class="emotion-card reveal"><div class="card-meta"><span class="emotion-number">01</span><i class="ri-emotion-happy-line" aria-hidden="true"></i></div><h3>Felicidade</h3><p>Tem momentos em que fico muito feliz simplesmente porque estamos conversando. Gosto quando ela compartilha o cotidiano, quando brincamos e quando consigo apoiar alguma coisa importante para ela. Também quero entender por que momentos tão pequenos conseguem me deixar tão feliz.</p></article>
-                    <article class="emotion-card reveal"><div class="card-meta"><span class="emotion-number">02</span><i class="ri-seedling-line" aria-hidden="true"></i></div><h3>Esperança</h3><p>Eu gostaria que pudéssemos construir alguma coisa novamente. Não quero fingir indiferença. Ao mesmo tempo, estou tentando aprender que “eu gostaria que acontecesse” não é o mesmo que “isso vai acontecer”.</p></article>
-                    <article class="emotion-card reveal"><div class="card-meta"><span class="emotion-number">03</span><i class="ri-pulse-line" aria-hidden="true"></i></div><h3>Ansiedade</h3><p>Quando faço um convite e não recebo uma resposta clara, começo a esperar. Tenho dificuldade de continuar o meu dia, penso em perguntar de novo e imagino várias possibilidades.</p></article>
-                    <article class="emotion-card reveal"><div class="card-meta"><span class="emotion-number">04</span><i class="ri-emotion-unhappy-line" aria-hidden="true"></i></div><h3>Frustração</h3><p>Quando fico esperando uma resposta que não chega, percebo que fico frustrado. Depois penso que talvez eu estivesse buscando uma certeza que ela ainda não tinha para me dar.</p></article>
-                    <article class="emotion-card reveal"><div class="card-meta"><span class="emotion-number">05</span><i class="ri-cloudy-line" aria-hidden="true"></i></div><h3>Angústia e saudade</h3><p>Sinto falta dela e tenho dificuldade com o espaço entre uma conversa e outra. O silêncio às vezes vira um lugar em que minha cabeça tenta encontrar explicações.</p></article>
-                    <article class="emotion-card reveal"><div class="card-meta"><span class="emotion-number">06</span><i class="ri-heart-3-line" aria-hidden="true"></i></div><h3>Carinho</h3><p>Eu gosto dela e me importo de verdade. Quero estar perto, mas também tenho medo de pressionar ou de fazer a proximidade depender da resposta que eu espero.</p></article>
-                </div>
+            <p class="hero-note">
+              Este é um registro sobre mim. Não é uma tentativa de explicar,
+              diagnosticar ou decidir o que Juliane sente.
+            </p>
+          </div>
+          <div class="hero-orbit reveal" aria-hidden="true">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="orbit-center">
+              <span>tentar</span><strong>me entender</strong>
             </div>
-        </section>
+            <span class="orbit-word word-one">esperança</span
+            ><span class="orbit-word word-two">medo</span
+            ><span class="orbit-word word-three">carinho</span
+            ><span class="orbit-word word-four">não sei</span>
+          </div>
+        </div>
+      </section>
 
-        <section class="section" id="historia">
-            <div class="container">
-                <div class="section-heading reveal"><span class="eyebrow">O reencontro</span><h2>Eu vejo ela diferente hoje.</h2><p>Não sinto que estou apenas olhando para a pessoa com quem tive uma história no passado. Tenho a sensação de estar conhecendo novamente quem ela se tornou. Percebo nela características que talvez eu não enxergasse antes, e isso aumentou minha admiração e o que sinto.</p></div>
-                <div class="timeline">
-                    <article class="timeline-item reveal"><span class="timeline-index">01</span><div><h3>O que aconteceu</h3><p>Voltamos a conversar, tivemos encontros e criamos uma proximidade. Ela já foi carinhosa comigo, disse coisas positivas sobre mim, me chamou de especial e disse que me vê como uma pessoa boa, pura e de bom coração.</p></div></article>
-                    <article class="timeline-item reveal"><span class="timeline-index">02</span><div><h3>O que também aconteceu</h3><p>Ela demonstrou preocupação em não me deixar confuso e deixou claro que, neste momento, não pretende namorar. Existem carinho e aproximação, mas também momentos de hesitação e indefinição.</p></div></article>
-                    <article class="timeline-item reveal"><span class="timeline-index">03</span><div><h3>Um contexto que eu conheço</h3><p>Sei que ela viveu experiências difíceis antes dessa nossa aproximação e me contou que passou mal naquele período. Ela também comentou que faz terapia. Às vezes me pergunto quanto o que viveu influencia o momento atual, mas não tenho como responder isso por ela. O processo terapêutico dela pertence a ela.</p></div></article>
-                    <article class="timeline-item reveal"><span class="timeline-index">04</span><div><h3>O que isso desperta em mim</h3><p>Quando ela fala algo bonito sobre mim, fico voltando àquela frase e tentando entender por que ela disse aquilo. Quando demora ou existe silêncio, minha cabeça começa a criar respostas.</p></div></article>
-                    <article class="timeline-item reveal"><span class="timeline-index">05</span><div><h3>O que eu ainda quero entender</h3><p>Estou me apaixonando pela pessoa que ela é hoje, pela história que tivemos, pela possibilidade de reconciliação ou por uma mistura de tudo isso? Não sei. Quero deixar essa pergunta aberta para a terapia.</p></div></article>
-                </div>
+      <section class="section section-soft" id="sentimentos">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">O que está acontecendo comigo</span>
+            <h2>Não consigo simplesmente tirar ela da cabeça.</h2>
+            <p>
+              Mesmo quando alguém diz que isso vai passar, para mim não parece
+              tão simples. Tenho pensado muito nela. Tenho vontade de conversar,
+              de vê-la e de entender o que está acontecendo entre nós. Às vezes
+              uma coisa pequena muda bastante o meu dia.
+            </p>
+          </div>
+          <div class="emotion-grid">
+            <article class="emotion-card reveal">
+              <div class="card-meta">
+                <span class="emotion-number">01</span
+                ><i class="ri-emotion-happy-line" aria-hidden="true"></i>
+              </div>
+              <h3>Felicidade</h3>
+              <p>
+                Tem momentos em que fico muito feliz simplesmente porque estamos
+                conversando. Gosto quando ela compartilha o cotidiano, quando
+                brincamos e quando consigo apoiar alguma coisa importante para
+                ela. Também quero entender por que momentos tão pequenos
+                conseguem me deixar tão feliz.
+              </p>
+            </article>
+            <article class="emotion-card reveal">
+              <div class="card-meta">
+                <span class="emotion-number">02</span
+                ><i class="ri-seedling-line" aria-hidden="true"></i>
+              </div>
+              <h3>Esperança</h3>
+              <p>
+                Eu gostaria que pudéssemos construir alguma coisa novamente. Não
+                quero fingir indiferença. Ao mesmo tempo, estou tentando
+                aprender que “eu gostaria que acontecesse” não é o mesmo que
+                “isso vai acontecer”.
+              </p>
+            </article>
+            <article class="emotion-card reveal">
+              <div class="card-meta">
+                <span class="emotion-number">03</span
+                ><i class="ri-pulse-line" aria-hidden="true"></i>
+              </div>
+              <h3>Ansiedade</h3>
+              <p>
+                Quando faço um convite e não recebo uma resposta clara, começo a
+                esperar. Tenho dificuldade de continuar o meu dia, penso em
+                perguntar de novo e imagino várias possibilidades.
+              </p>
+            </article>
+            <article class="emotion-card reveal">
+              <div class="card-meta">
+                <span class="emotion-number">04</span
+                ><i class="ri-emotion-unhappy-line" aria-hidden="true"></i>
+              </div>
+              <h3>Frustração</h3>
+              <p>
+                Quando fico esperando uma resposta que não chega, percebo que
+                fico frustrado. Depois penso que talvez eu estivesse buscando
+                uma certeza que ela ainda não tinha para me dar.
+              </p>
+            </article>
+            <article class="emotion-card reveal">
+              <div class="card-meta">
+                <span class="emotion-number">05</span
+                ><i class="ri-cloudy-line" aria-hidden="true"></i>
+              </div>
+              <h3>Angústia e saudade</h3>
+              <p>
+                Sinto falta dela e tenho dificuldade com o espaço entre uma
+                conversa e outra. O silêncio às vezes vira um lugar em que minha
+                cabeça tenta encontrar explicações.
+              </p>
+            </article>
+            <article class="emotion-card reveal">
+              <div class="card-meta">
+                <span class="emotion-number">06</span
+                ><i class="ri-heart-3-line" aria-hidden="true"></i>
+              </div>
+              <h3>Carinho</h3>
+              <p>
+                Eu gosto dela e me importo de verdade. Quero estar perto, mas
+                também tenho medo de pressionar ou de fazer a proximidade
+                depender da resposta que eu espero.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="historia">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">O reencontro</span>
+            <h2>Eu vejo ela diferente hoje.</h2>
+            <p>
+              Não sinto que estou apenas olhando para a pessoa com quem tive uma
+              história no passado. Tenho a sensação de estar conhecendo
+              novamente quem ela se tornou. Percebo nela características que
+              talvez eu não enxergasse antes, e isso aumentou minha admiração e
+              o que sinto.
+            </p>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <span class="timeline-index">01</span>
+              <div>
+                <h3>O que aconteceu</h3>
+                <p>
+                  Voltamos a conversar, tivemos encontros e criamos uma
+                  proximidade. Ela já foi carinhosa comigo, disse coisas
+                  positivas sobre mim, me chamou de especial e disse que me vê
+                  como uma pessoa boa, pura e de bom coração.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="timeline-index">02</span>
+              <div>
+                <h3>O que também aconteceu</h3>
+                <p>
+                  Ela demonstrou preocupação em não me deixar confuso e deixou
+                  claro que, neste momento, não pretende namorar. Existem
+                  carinho e aproximação, mas também momentos de hesitação e
+                  indefinição.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="timeline-index">03</span>
+              <div>
+                <h3>Um contexto que eu conheço</h3>
+                <p>
+                  Sei que ela viveu experiências difíceis antes dessa nossa
+                  aproximação e me contou que passou mal naquele período. Ela
+                  também comentou que faz terapia. Às vezes me pergunto quanto o
+                  que viveu influencia o momento atual, mas não tenho como
+                  responder isso por ela. O processo terapêutico dela pertence a
+                  ela.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="timeline-index">04</span>
+              <div>
+                <h3>O que isso desperta em mim</h3>
+                <p>
+                  Quando ela fala algo bonito sobre mim, fico voltando àquela
+                  frase e tentando entender por que ela disse aquilo. Quando
+                  demora ou existe silêncio, minha cabeça começa a criar
+                  respostas.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item reveal">
+              <span class="timeline-index">05</span>
+              <div>
+                <h3>O que eu ainda quero entender</h3>
+                <p>
+                  Estou me apaixonando pela pessoa que ela é hoje, pela história
+                  que tivemos, pela possibilidade de reconciliação ou por uma
+                  mistura de tudo isso? Não sei. Quero deixar essa pergunta
+                  aberta para a terapia.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contrast" id="realidade">
+        <div class="container">
+          <div class="section-heading section-heading-light reveal">
+            <span class="eyebrow">Fato, sentimento e interpretação</span>
+            <h2>
+              O que sinto é real em mim. Mas não é uma resposta sobre ela.
+            </h2>
+            <p>
+              Tenho dificuldade de separar essas coisas quando estou muito
+              envolvido. Quero praticar essa diferença sem diminuir o que sinto.
+            </p>
+          </div>
+          <div class="reality-grid">
+            <div class="reality-column reveal">
+              <span class="column-label">O que eu sei</span>
+              <div class="reality-item">
+                <h3>Existe carinho e proximidade.</h3>
+                <p>
+                  Conversamos, tivemos encontros, compartilhamos coisas do
+                  cotidiano e ela já demonstrou carinho por mim.
+                </p>
+              </div>
+              <div class="reality-item">
+                <h3>Ela colocou um limite.</h3>
+                <p>
+                  Ela disse que, neste momento, não pretende namorar e já
+                  mostrou preocupação em não me deixar confuso.
+                </p>
+              </div>
+              <div class="reality-item">
+                <h3>Eu estou muito envolvido.</h3>
+                <p>
+                  Penso nela, quero vê-la, sinto esperança e percebo que
+                  pequenas atitudes mexem bastante comigo.
+                </p>
+              </div>
             </div>
-        </section>
-
-        <section class="section section-contrast" id="realidade">
-            <div class="container">
-                <div class="section-heading section-heading-light reveal"><span class="eyebrow">Fato, sentimento e interpretação</span><h2>O que sinto é real em mim. Mas não é uma resposta sobre ela.</h2><p>Tenho dificuldade de separar essas coisas quando estou muito envolvido. Quero praticar essa diferença sem diminuir o que sinto.</p></div>
-                <div class="reality-grid">
-                    <div class="reality-column reveal"><span class="column-label">O que eu sei</span>
-                        <div class="reality-item"><h3>Existe carinho e proximidade.</h3><p>Conversamos, tivemos encontros, compartilhamos coisas do cotidiano e ela já demonstrou carinho por mim.</p></div>
-                        <div class="reality-item"><h3>Ela colocou um limite.</h3><p>Ela disse que, neste momento, não pretende namorar e já mostrou preocupação em não me deixar confuso.</p></div>
-                        <div class="reality-item"><h3>Eu estou muito envolvido.</h3><p>Penso nela, quero vê-la, sinto esperança e percebo que pequenas atitudes mexem bastante comigo.</p></div>
-                    </div>
-                    <div class="reality-column reality-column-accent reveal"><span class="column-label">Perguntas que minha cabeça tenta responder</span>
-                        <div class="reality-item"><h3>“Será que ela gosta de mim?”</h3><p>Tenho vontade de acreditar que pode existir algo além do carinho. Mas eu não sei se é isso que acontece com ela.</p></div>
-                        <div class="reality-item"><h3>“Será que ela sente alguma coisa e tem medo?”</h3><p>Essa é uma possibilidade que às vezes minha cabeça cria. Não tenho como afirmar o motivo das hesitações dela.</p></div>
-                        <div class="reality-item"><h3>“Será que vamos voltar?”</h3><p>Eu gostaria que existisse essa possibilidade. O meu desejo não é uma previsão do que vai acontecer.</p></div>
-                    </div>
-                </div>
-                <blockquote class="big-quote reveal"><p>A pergunta não é só “ela gosta de mim?”. Quero entender por que saber disso se tornou tão importante para mim.</p></blockquote>
+            <div class="reality-column reality-column-accent reveal">
+              <span class="column-label"
+                >Perguntas que minha cabeça tenta responder</span
+              >
+              <div class="reality-item">
+                <h3>“Será que ela gosta de mim?”</h3>
+                <p>
+                  Tenho vontade de acreditar que pode existir algo além do
+                  carinho. Mas eu não sei se é isso que acontece com ela.
+                </p>
+              </div>
+              <div class="reality-item">
+                <h3>“Será que ela sente alguma coisa e tem medo?”</h3>
+                <p>
+                  Essa é uma possibilidade que às vezes minha cabeça cria. Não
+                  tenho como afirmar o motivo das hesitações dela.
+                </p>
+              </div>
+              <div class="reality-item">
+                <h3>“Será que vamos voltar?”</h3>
+                <p>
+                  Eu gostaria que existisse essa possibilidade. O meu desejo não
+                  é uma previsão do que vai acontecer.
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
+          <blockquote class="big-quote reveal">
+            <p>
+              A pergunta não é só “ela gosta de mim?”. Quero entender por que
+              saber disso se tornou tão importante para mim.
+            </p>
+          </blockquote>
+        </div>
+      </section>
 
-        <section class="section intensity-section">
-            <div class="container psycho-grid">
-                <div class="section-heading reveal"><span class="eyebrow">A intensidade</span><h2>Por que isso está mexendo tanto comigo?</h2><p>Essa é uma das coisas que quero entender na terapia. Por que uma relação que ainda nem tem uma definição consegue ocupar tanto espaço dentro de mim?</p></div>
-                <div class="psycho-panel reveal">
-                    <div class="psycho-question"><span>01</span><p>Por que tenho tanta necessidade de saber o que ela sente?</p></div><div class="psycho-question"><span>02</span><p>Por que a incerteza e a espera por uma resposta mexem tanto comigo?</p></div><div class="psycho-question"><span>03</span><p>Estou com medo de perder algo que ainda nem sei se tenho?</p></div><div class="psycho-question"><span>04</span><p>Quanto disso pertence ao presente e quanto pertence à nossa história?</p></div><div class="psycho-question"><span>05</span><p>Por que sinto necessidade de procurar significado em pequenos gestos?</p></div><div class="psycho-question"><span>06</span><p>Tenho medo de não ser escolhido?</p></div>
-                </div>
+      <section class="section intensity-section">
+        <div class="container psycho-grid">
+          <div class="section-heading reveal">
+            <span class="eyebrow">A intensidade</span>
+            <h2>Por que isso está mexendo tanto comigo?</h2>
+            <p>
+              Essa é uma das coisas que quero entender na terapia. Por que uma
+              relação que ainda nem tem uma definição consegue ocupar tanto
+              espaço dentro de mim?
+            </p>
+          </div>
+          <div class="psycho-panel reveal">
+            <div class="psycho-question">
+              <span>01</span>
+              <p>Por que tenho tanta necessidade de saber o que ela sente?</p>
             </div>
-        </section>
-
-        <section class="section section-soft" id="psicanalise">
-            <div class="container psycho-grid">
-                <div class="section-heading reveal"><span class="eyebrow">Perguntas para observar</span><h2>Como posso aprender a suportar o não saber?</h2><p>Não quero usar ideias da psicanálise para explicar Juliane nem para fazer minha própria análise sozinho. Quero levar perguntas sinceras para a terapia.</p></div>
-                <div class="psycho-panel reveal">
-                    <div class="psycho-question"><span>01</span><p>O que faço quando não tenho uma resposta?</p></div><div class="psycho-question"><span>02</span><p>Por que minha mente precisa preencher o silêncio?</p></div><div class="psycho-question"><span>03</span><p>O que existe entre o meu desejo e a realidade?</p></div><div class="psycho-question"><span>04</span><p>O que estou tentando controlar ou evitar sentir?</p></div><div class="psycho-question psycho-question-featured"><span>05</span><p>O que essa história desperta em mim que talvez vá além dela?</p></div>
-                </div>
+            <div class="psycho-question">
+              <span>02</span>
+              <p>
+                Por que a incerteza e a espera por uma resposta mexem tanto
+                comigo?
+              </p>
             </div>
-        </section>
-
-        <section class="section section-faith" id="fe">
-            <div class="container faith-grid">
-                <div class="faith-copy reveal">
-                    <span class="eyebrow">Minha fé</span>
-                    <h2>Uma oração que está caminhando comigo</h2>
-                    <p>Não escrevi porque encontrei todas as respostas. Escrevi porque existem coisas que eu não consigo controlar.</p>
-                </div>
-                <article class="prayer-card reveal">
-                    <p>Senhor Deus,</p>
-                    <p>hoje eu venho diante de Ti com o coração aberto, porque Tu conheces aquilo que eu sinto até melhor do que eu consigo explicar.</p>
-                    <p>Tu conheces a minha história com a Juliane. Conheces aquilo que vivemos no passado, conheces o tempo que passou, tudo aquilo que mudou e também esse reencontro que está acontecendo agora.</p>
-
-                    <p>Senhor, eu tenho um carinho muito grande por ela. Eu gosto dela, penso nela, desejo que ela esteja bem e gostaria que existisse novamente um caminho entre nós. Existe esperança dentro de mim, e esse reencontro mexeu profundamente comigo.</p>
-                    <p>Tu também sabes, Senhor, o quanto tudo isso tem ocupado meus pensamentos. Existem momentos em que uma conversa me deixa muito feliz e outros em que a falta de uma resposta desperta ansiedade dentro de mim.</p>
-
-                    <p>Não permita que a minha ansiedade fale mais alto do que o amor. Não permita que o medo de perdê-la faça com que eu pressione, cobre ou tente acelerar aquilo que precisa de tempo.</p>
-                    <p>Quando eu sentir vontade de encontrar uma resposta imediatamente, ajuda-me primeiro a perceber aquilo que está acontecendo dentro de mim. Ensina-me que nem toda incerteza precisa ser resolvida no mesmo instante.</p>
-
-                    <p>Dá-me serenidade para conversar sem procurar significado escondido em cada palavra.</p>
-                    <p>Dá-me tranquilidade para não transformar cada silêncio em rejeição, cada carinho em promessa ou cada incerteza em sofrimento.</p>
-                    <p>Que eu consiga viver aquilo que está acontecendo hoje sem exigir que o amanhã seja decidido imediatamente.</p>
-
-                    <p>Ajuda-me também a distinguir aquilo que aconteceu daquilo que minha mente imaginou depois.</p>
-                    <p>Que eu consiga reconhecer quando estou diante de um fato, quando estou diante de uma esperança e quando estou diante de um medo.</p>
-                    <p>Não quero deixar de sonhar, Senhor. Quero apenas aprender a não transformar aquilo que desejo naquilo que acredito já ser verdade.</p>
-
-                    <p>Cuida da Juliane, Senhor.</p>
-                    <p>Abençoa a vida dela, os sonhos dela, a família dela, o trabalho, os estudos, os projetos e tudo aquilo que ela guarda no coração.</p>
-                    <p>Protege-a. Dá-lhe paz, saúde, sabedoria e discernimento para as decisões que precisa tomar.</p>
-
-                    <p>Se existir dentro dela alguma confusão em relação a mim, dá-lhe clareza.</p>
-                    <p>Mas não permita que ela escolha alguma coisa por culpa, medo, pena ou pressão. Quero que qualquer sentimento que possa nascer entre nós seja verdadeiro e livre.</p>
-                    <p>E se aquilo que ela sentir for diferente daquilo que eu desejo, ajuda-me a respeitar a verdade dela.</p>
-
-                    <p>Se houver uma semente entre nós, eu entrego essa semente nas Tuas mãos.</p>
-                    <p>Eu posso cuidar dela com respeito, carinho, presença e paciência, mas não quero tentar controlar quando ou se ela vai florescer.</p>
-                    <p>Se um dia o coração dela também desejar caminhar novamente ao meu lado, que isso aconteça porque nasceu dentro dela de maneira verdadeira.</p>
-
-                    <p>Senhor, eu confesso que tenho esperança.</p>
-                    <p>Não quero fingir diante de Ti que não tenho.</p>
-                    <p>Uma parte de mim gostaria muito que nós pudéssemos olhar um para o outro algum dia e perceber que vale a pena tentar novamente.</p>
-                    <p>Mas coloca paz dentro dessa esperança.</p>
-                    <p>Que ela não vire obsessão.<br>Que não vire cobrança.<br>Que não me faça abandonar minha própria vida.<br>Que não me faça tentar controlar aquilo que pertence ao tempo, a ela e a Ti.</p>
-
-                    <p>Quando eu estiver esperando uma mensagem, uma resposta ou uma decisão, lembra-me de que minha vida continua acontecendo.</p>
-                    <p>Que eu consiga colocar o celular de lado, continuar meu dia e entender que esperar não significa permanecer parado.</p>
-
-                    <p>Ajuda-me também a continuar crescendo como pessoa.</p>
-                    <p>Mostra-me aquilo que preciso melhorar.</p>
-                    <p>Ensina-me a ser mais paciente, seguro, equilibrado e verdadeiro.</p>
-                    <p>E mostra-me também aquilo que essa história desperta dentro de mim que talvez eu ainda não compreenda.</p>
-                    <p>Se existir medo de perder, necessidade de ser escolhido, dificuldade com a incerteza ou alguma ferida antiga falando dentro de mim, ajuda-me a ter coragem para olhar para isso.</p>
-
-                    <p>Quando minha cabeça começar a criar mil possibilidades, acalma meu coração.</p>
-                    <p>Quando eu tiver vontade de perguntar novamente alguma coisa que ela ainda não sabe responder, dá-me paciência.</p>
-                    <p>Quando houver carinho, ensina-me a recebê-lo sem imediatamente exigir uma definição.</p>
-                    <p>Quando houver distância, ensina-me a não entrar em desespero.</p>
-                    <p>E quando houver oportunidade de estarmos juntos, ajuda-me simplesmente a estar presente.</p>
-
-                    <p>Ensina-me a suportar o não saber.</p>
-                    <p>Talvez essa seja uma das coisas que eu mais precise aprender agora.</p>
-                    <p>Não saber não significa necessariamente perder.</p>
-                    <p>Não saber também não significa que aquilo que desejo acontecerá.</p>
-                    <p>Às vezes significa apenas que a resposta ainda não existe.</p>
-
-                    <p>Eu entrego a Juliane a Ti porque sei que ela não me pertence.</p>
-                    <p>Ela tem os próprios sentimentos, escolhas, sonhos e caminhos.</p>
-                    <p>E entrego também o meu coração.</p>
-
-                    <p>Se nossos caminhos estiverem realmente se aproximando novamente, que eu não precise carregar essa aproximação sozinho.</p>
-                    <p>Que exista movimento dos dois lados.<br>Que exista vontade dos dois lados.<br>Que exista escolha dos dois lados.</p>
-                    <p>Se houver algo bonito para nascer daqui, que tenha raízes em respeito, amizade, reciprocidade, verdade e amor.</p>
-
-                    <p>Acima de tudo, Senhor, que eu não perca a beleza do presente tentando descobrir desesperadamente o futuro.</p>
-                    <p>Obrigado pelas conversas, pelos reencontros, pelos momentos bons e por tudo aquilo que já pude aprender através dessa história.</p>
-                    <p>Cuida dela.<br>Cuida de mim.</p>
-                    <p>E, se for para cuidarmos um do outro novamente, mostra-nos isso no tempo certo.</p>
-
-                    <p>Entrego nas Tuas mãos aquilo que eu não consigo controlar.</p>
-                    <p>Que seja feita a Tua vontade, com amor, liberdade e paz.</p>
-                    <strong>Amém.</strong>
-                    <small class="prayer-note">Essa oração pode mudar conforme eu também mudar.</small>
-                </article>
+            <div class="psycho-question">
+              <span>03</span>
+              <p>Estou com medo de perder algo que ainda nem sei se tenho?</p>
             </div>
-        </section>
-
-        <section class="section section-soft boundaries-section">
-            <div class="container">
-                <div class="section-heading reveal"><span class="eyebrow">Reciprocidade e limites</span><h2>Estou deixando espaço para ela também escolher?</h2><p>Ela tem liberdade para escolher o que quer. Eu também tenho limites emocionais. Respeitar o tempo dela não significa que eu precise ficar indefinidamente esperando uma possibilidade.</p></div>
-                <div class="principles-grid">
-                    <article class="principle-card reveal"><span>01</span><h3>Quem inicia?</h3><p>Eu sempre começo as conversas ou ela também me procura espontaneamente?</p></article><article class="principle-card reveal"><span>02</span><h3>Quem cria oportunidades?</h3><p>Eu sempre proponho os encontros ou ela também encontra maneiras de estarmos perto?</p></article><article class="principle-card reveal"><span>03</span><h3>O que faço com o silêncio?</h3><p>Estou mantendo a conversa porque quero compartilhar algo ou porque tenho medo de perder a proximidade?</p></article><article class="principle-card reveal"><span>04</span><h3>Onde está meu limite?</h3><p>Qual é a diferença, para mim, entre ter paciência e ficar emocionalmente preso esperando uma possibilidade?</p></article><article class="principle-card reveal"><span>05</span><h3>Meus medos</h3><p>Tenho medo de criar expectativa demais, pressioná-la sem perceber, confundir carinho com interesse romântico, me machucar, sentir muito mais do que ela, perder nossa proximidade, acelerar as coisas e não conseguir aceitar uma resposta diferente da que desejo.</p></article><article class="principle-card reveal"><span>06</span><h3>O que eu preciso preservar?</h3><p>Não quero viver esperando uma possibilidade nem fazer meu equilíbrio depender de uma definição que ainda não existe.</p></article>
-                </div>
+            <div class="psycho-question">
+              <span>04</span>
+              <p>
+                Quanto disso pertence ao presente e quanto pertence à nossa
+                história?
+              </p>
             </div>
-        </section>
-
-        <section class="section journal-section" id="diario">
-            <div class="container journal-container">
-                <div class="section-heading journal-intro reveal">
-                    <span class="eyebrow">Diário do agora</span>
-                    <h2>Antes de interpretar, observar.</h2>
-                    <p class="journal-subtitle">O que aconteceu, o que senti e o que minha mente acrescentou.</p>
-                    <p>Nem tudo que eu sinto é um fato sobre o outro. Este espaço existe para separar acontecimento, emoção, desejo, medo e interpretação.</p>
-                </div>
-
-                <form class="journal-form journal-guided reveal" id="journalForm">
-                    <fieldset class="journal-block journal-feelings">
-                        <legend><span class="journal-step">01</span> Como estou me sentindo?</legend>
-                        <p class="field-help">Escolha quantas emoções precisar para descrever este momento.</p>
-                        <div class="mood-picker" id="moodPicker" aria-label="Emoções sentidas">
-                            <button type="button" class="choice-chip mood-button" data-mood="Calmo" aria-pressed="false">Calmo</button>
-                            <button type="button" class="choice-chip mood-button" data-mood="Feliz" aria-pressed="false">Feliz</button>
-                            <button type="button" class="choice-chip mood-button" data-mood="Esperançoso" aria-pressed="false">Esperançoso</button>
-                            <button type="button" class="choice-chip mood-button" data-mood="Ansioso" aria-pressed="false">Ansioso</button>
-                            <button type="button" class="choice-chip mood-button" data-mood="Confuso" aria-pressed="false">Confuso</button>
-                            <button type="button" class="choice-chip mood-button" data-mood="Angustiado" aria-pressed="false">Angustiado</button>
-                            <button type="button" class="choice-chip mood-button" data-mood="Frustrado" aria-pressed="false">Frustrado</button>
-                            <button type="button" class="choice-chip mood-button" data-mood="Inseguro" aria-pressed="false">Inseguro</button>
-                            <button type="button" class="choice-chip mood-button" data-mood="Triste" aria-pressed="false">Triste</button>
-                            <button type="button" class="choice-chip mood-button" data-mood="Animado" aria-pressed="false">Animado</button>
-                            <button type="button" class="choice-chip mood-button" data-mood="Em paz" aria-pressed="false">Em paz</button>
-                            <button type="button" class="choice-chip mood-button" data-mood="Com medo" aria-pressed="false">Com medo</button>
-                            <button type="button" class="choice-chip mood-button" data-mood="Com saudade" aria-pressed="false">Com saudade</button>
-                        </div>
-                        <div class="intensity-control">
-                            <div class="intensity-heading"><label for="journalIntensity">Quanto isso está mexendo comigo?</label><output id="intensityOutput" for="journalIntensity"><strong>5</strong> · Moderado</output></div>
-                            <input type="range" id="journalIntensity" min="1" max="10" value="5">
-                            <div class="range-scale" aria-hidden="true"><span>1</span><span>10</span></div>
-                        </div>
-                    </fieldset>
-
-                    <div class="journal-two-columns">
-                        <div class="journal-block concept-block" data-concept="fato">
-                            <span class="concept-label">Fato</span>
-                            <label for="journalFact">O que realmente aconteceu?</label>
-                            <p class="field-help">Descreva somente aquilo que poderia ser observado ou registrado, sem tentar explicar a intenção da outra pessoa.</p>
-                            <textarea id="journalFact" rows="6" required>Perguntei se poderia passar para experimentar o bolo e tomar um café. Ela respondeu que iria descansar um pouco e que, assim que fizesse o bolo, me avisaria.</textarea>
-                        </div>
-                        <div class="journal-block concept-block" data-concept="emocao">
-                            <span class="concept-label">Emoção</span>
-                            <label for="journalFeeling">O que isso despertou em mim?</label>
-                            <textarea id="journalFeeling" rows="6" required>Fiquei feliz com a possibilidade de vê-la, esperançoso e ao mesmo tempo um pouco ansioso esperando para saber se ela vai me avisar.</textarea>
-                            <span class="option-label">Percebo isso no meu corpo em:</span>
-                            <div class="choice-group" id="bodyPicker" aria-label="Sensação corporal">
-                                <button type="button" class="choice-chip body-button" data-body="Peito" aria-pressed="false">Peito</button>
-                                <button type="button" class="choice-chip body-button" data-body="Estômago" aria-pressed="false">Estômago</button>
-                                <button type="button" class="choice-chip body-button" data-body="Garganta" aria-pressed="false">Garganta</button>
-                                <button type="button" class="choice-chip body-button" data-body="Cabeça" aria-pressed="false">Cabeça</button>
-                                <button type="button" class="choice-chip body-button" data-body="Respiração" aria-pressed="false">Respiração</button>
-                                <button type="button" class="choice-chip body-button" data-body="Corpo inteiro" aria-pressed="false">Corpo inteiro</button>
-                                <button type="button" class="choice-chip body-button" data-body="Não percebi reação física" aria-pressed="false">Não percebi reação física</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="journal-block concept-block" data-concept="interpretacao">
-                        <span class="concept-label">Interpretação</span>
-                        <label for="journalInterpretation">O que minha mente começou a contar?</label>
-                        <textarea id="journalInterpretation" rows="5">Comecei a pensar que talvez ela queira que eu passe lá e que esse aviso possa virar uma oportunidade de nos vermos. Não sei se é isso. Talvez eu esteja dando um significado maior porque quero muito vê-la.</textarea>
-                        <span class="option-label">Quanto eu realmente sei sobre essa interpretação?</span>
-                        <div class="certainty-options" id="certaintyOptions">
-                            <label class="radio-card"><input type="radio" name="certainty" value="É apenas uma hipótese" checked><span>É apenas uma hipótese</span></label>
-                            <label class="radio-card"><input type="radio" name="certainty" value="Tenho alguns indícios"><span>Tenho alguns indícios</span></label>
-                            <label class="radio-card"><input type="radio" name="certainty" value="Tenho evidências claras"><span>Tenho evidências claras</span></label>
-                            <label class="radio-card"><input type="radio" name="certainty" value="A pessoa me disse diretamente"><span>A pessoa me disse diretamente</span></label>
-                        </div>
-                    </div>
-
-                    <div class="journal-two-columns desire-fear-grid">
-                        <div class="journal-block concept-block" data-concept="desejo">
-                            <span class="concept-label">Desejo</span>
-                            <label for="journalDesire">O que eu gostaria que isso significasse?</label>
-                            <textarea id="journalDesire" rows="6">Eu gostaria que isso significasse que existe vontade dos dois de nos vermos e que nossa aproximação está acontecendo naturalmente.</textarea>
-                            <p class="field-help">Isso representa aquilo que você gostaria que fosse verdade. Desejar algo não significa que aquilo já esteja acontecendo.</p>
-                        </div>
-                        <div class="journal-block concept-block" data-concept="medo">
-                            <span class="concept-label">Medo</span>
-                            <label for="journalFear">O que tenho medo que isso signifique?</label>
-                            <textarea id="journalFear" rows="6">Tenho medo de criar expectativa, esperar pelo encontro e descobrir que interpretei a situação de uma maneira maior do que ela realmente era.</textarea>
-                            <p class="field-help">O medo também cria histórias. Ele merece ser ouvido, mas não precisa ser tratado como previsão.</p>
-                        </div>
-                    </div>
-
-                    <aside class="reality-anchor" aria-labelledby="realityAnchorTitle">
-                        <i class="ri-anchor-line" aria-hidden="true"></i>
-                        <div><span class="concept-label">Realidade</span><h3 id="realityAnchorTitle">O que eu realmente sei até agora?</h3><p>Ela disse que vai me avisar quando fizer o bolo. O resto, por enquanto, eu não sei.</p><strong>Estou tentando esperar pelo que realmente acontecer sem responder por ela dentro da minha cabeça.</strong></div>
-                    </aside>
-
-                    <div class="journal-block control-block">
-                        <span class="journal-step">08</span>
-                        <h3>O que está nas minhas mãos?</h3>
-                        <div class="control-grid">
-                            <fieldset class="control-card control-mine"><legend>Está nas minhas mãos</legend>
-                                <label><input type="checkbox" name="control" value="Minha maneira de responder"> Minha maneira de responder</label>
-                                <label><input type="checkbox" name="control" value="Respeitar o espaço do outro"> Respeitar o espaço do outro</label>
-                                <label><input type="checkbox" name="control" value="Não cobrar uma definição"> Não cobrar uma definição</label>
-                                <label><input type="checkbox" name="control" value="Continuar meu dia"> Continuar meu dia</label>
-                                <label><input type="checkbox" name="control" value="Cuidar da minha ansiedade"> Cuidar da minha ansiedade</label>
-                                <label><input type="checkbox" name="control" value="Conversar quando for natural"> Conversar quando for natural</label>
-                                <label><input type="checkbox" name="control" value="Respeitar meus próprios limites"> Respeitar meus próprios limites</label>
-                            </fieldset>
-                            <div class="control-card control-outside"><h4>Não está nas minhas mãos</h4><ul><li>O sentimento da outra pessoa</li><li>Quando ela vai responder</li><li>Se ela vai querer me encontrar</li><li>O tempo emocional dela</li><li>As decisões dela</li><li>O futuro da relação</li></ul></div>
-                        </div>
-                    </div>
-
-                    <div class="journal-two-columns reflection-grid">
-                        <div class="journal-block">
-                            <span class="journal-step">09</span>
-                            <label for="journalAdvice">Se um amigo estivesse vivendo exatamente isso, o que eu diria para ele?</label>
-                            <textarea id="journalAdvice" rows="7">Eu diria para ele ficar tranquilo. Ele já demonstrou que gostaria de encontrá-la. Agora não precisa perguntar novamente. Se ela quiser, ela sabe como avisá-lo. Enquanto isso, ele pode continuar o próprio dia.</textarea>
-                        </div>
-                        <fieldset class="journal-block action-block">
-                            <legend><span class="journal-step">10</span> Preciso fazer alguma coisa agora?</legend>
-                            <label class="action-card"><input type="radio" name="action" value="Sim"><span><strong>Sim</strong><small>Existe alguma atitude concreta que preciso tomar.</small></span></label>
-                            <label class="action-card"><input type="radio" name="action" value="Não. Posso esperar." checked><span><strong>Não. Posso esperar.</strong><small>Nem toda emoção precisa virar uma ação.</small></span></label>
-                            <label class="action-card"><input type="radio" name="action" value="Ainda não sei."><span><strong>Ainda não sei.</strong><small>Posso decidir depois.</small></span></label>
-                        </fieldset>
-                    </div>
-
-                    <div class="faith-reflection journal-block">
-                        <div class="faith-toggle-row"><div><span class="journal-step">11</span><h3>Entrego o que não posso controlar</h3><p class="field-help">Um espaço opcional para sua fé ou reflexão pessoal.</p></div><label class="switch"><input type="checkbox" id="faithToggle"><span aria-hidden="true"></span><small>Quero registrar uma oração/reflexão</small></label></div>
-                        <div class="faith-field" id="faithField" hidden><label for="journalPrayer">Minha oração ou reflexão</label><textarea id="journalPrayer" rows="5">Senhor, reconheço aquilo que estou sentindo. Entrego a Ti aquilo que não posso controlar. Dá-me serenidade para respeitar o tempo, distinguir esperança de certeza e continuar vivendo o presente com paz.</textarea></div>
-                    </div>
-
-                    <aside class="final-checkin">
-                        <span class="eyebrow">Antes de guardar esta reflexão...</span>
-                        <div class="checkin-lines"><p><strong>Fato</strong> O que aconteceu pertence à realidade.</p><p><strong>Emoção</strong> O que senti pertence a mim.</p><p><strong>Interpretação</strong> O significado que imaginei ainda pode ser apenas uma hipótese.</p><p><strong>Desejo</strong> O que eu gostaria que acontecesse não precisa ser confundido com aquilo que acontecerá.</p></div>
-                        <blockquote>Posso sentir tudo isso sem precisar resolver tudo agora.</blockquote>
-                    </aside>
-
-                    <div class="journal-submit"><button class="button button-primary" type="submit"><i class="ri-save-line" aria-hidden="true"></i> Guardar reflexão</button><p class="form-message" id="formMessage" aria-live="polite"></p></div>
-                </form>
-
-                <section class="insight-panel reveal" aria-labelledby="insightTitle">
-                    <div class="insight-heading"><span class="eyebrow">Painel de autopercepção</span><h3 id="insightTitle">Meu estado emocional</h3></div>
-                    <div class="insight-stats" id="insightStats"></div>
-                    <p class="insight-note" id="insightNote"></p>
-                </section>
-
-                <div class="journal-entries-wrap reveal">
-                    <div class="journal-toolbar"><div><span class="eyebrow">Histórico</span><h3><i class="ri-book-open-line" aria-hidden="true"></i> Reflexões salvas</h3></div><button type="button" class="text-button" id="clearJournal"><i class="ri-delete-bin-line" aria-hidden="true"></i> Limpar diário</button></div>
-                    <div class="journal-entries" id="journalEntries"></div>
-                </div>
+            <div class="psycho-question">
+              <span>05</span>
+              <p>
+                Por que sinto necessidade de procurar significado em pequenos
+                gestos?
+              </p>
             </div>
+            <div class="psycho-question">
+              <span>06</span>
+              <p>Tenho medo de não ser escolhido?</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-soft" id="psicanalise">
+        <div class="container psycho-grid">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Perguntas para observar</span>
+            <h2>Como posso aprender a suportar o não saber?</h2>
+            <p>
+              Não quero usar ideias da psicanálise para explicar Juliane nem
+              para fazer minha própria análise sozinho. Quero levar perguntas
+              sinceras para a terapia.
+            </p>
+          </div>
+          <div class="psycho-panel reveal">
+            <div class="psycho-question">
+              <span>01</span>
+              <p>O que faço quando não tenho uma resposta?</p>
+            </div>
+            <div class="psycho-question">
+              <span>02</span>
+              <p>Por que minha mente precisa preencher o silêncio?</p>
+            </div>
+            <div class="psycho-question">
+              <span>03</span>
+              <p>O que existe entre o meu desejo e a realidade?</p>
+            </div>
+            <div class="psycho-question">
+              <span>04</span>
+              <p>O que estou tentando controlar ou evitar sentir?</p>
+            </div>
+            <div class="psycho-question psycho-question-featured">
+              <span>05</span>
+              <p>
+                O que essa história desperta em mim que talvez vá além dela?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-faith" id="fe">
+        <div class="container faith-grid">
+          <div class="faith-copy reveal">
+            <span class="eyebrow">Minha fé</span>
+            <h2>Uma oração que está caminhando comigo</h2>
+            <p>
+              Não escrevi porque encontrei todas as respostas. Escrevi porque
+              existem coisas que eu não consigo controlar.
+            </p>
+          </div>
+          <article class="prayer-card reveal">
+            <p>Senhor Deus,</p>
+            <p>
+              hoje eu venho diante de Ti com o coração aberto, porque Tu
+              conheces aquilo que eu sinto até melhor do que eu consigo
+              explicar.
+            </p>
+            <p>
+              Tu conheces a minha história com a Juliane. Conheces aquilo que
+              vivemos no passado, conheces o tempo que passou, tudo aquilo que
+              mudou e também esse reencontro que está acontecendo agora.
+            </p>
+
+            <p>
+              Senhor, eu tenho um carinho muito grande por ela. Eu gosto dela,
+              penso nela, desejo que ela esteja bem e gostaria que existisse
+              novamente um caminho entre nós. Existe esperança dentro de mim, e
+              esse reencontro mexeu profundamente comigo.
+            </p>
+            <p>
+              Tu também sabes, Senhor, o quanto tudo isso tem ocupado meus
+              pensamentos. Existem momentos em que uma conversa me deixa muito
+              feliz e outros em que a falta de uma resposta desperta ansiedade
+              dentro de mim.
+            </p>
+
+            <p>
+              Não permita que a minha ansiedade fale mais alto do que o amor.
+              Não permita que o medo de perdê-la faça com que eu pressione,
+              cobre ou tente acelerar aquilo que precisa de tempo.
+            </p>
+            <p>
+              Quando eu sentir vontade de encontrar uma resposta imediatamente,
+              ajuda-me primeiro a perceber aquilo que está acontecendo dentro de
+              mim. Ensina-me que nem toda incerteza precisa ser resolvida no
+              mesmo instante.
+            </p>
+
+            <p>
+              Dá-me serenidade para conversar sem procurar significado escondido
+              em cada palavra.
+            </p>
+            <p>
+              Dá-me tranquilidade para não transformar cada silêncio em
+              rejeição, cada carinho em promessa ou cada incerteza em
+              sofrimento.
+            </p>
+            <p>
+              Que eu consiga viver aquilo que está acontecendo hoje sem exigir
+              que o amanhã seja decidido imediatamente.
+            </p>
+
+            <p>
+              Ajuda-me também a distinguir aquilo que aconteceu daquilo que
+              minha mente imaginou depois.
+            </p>
+            <p>
+              Que eu consiga reconhecer quando estou diante de um fato, quando
+              estou diante de uma esperança e quando estou diante de um medo.
+            </p>
+            <p>
+              Não quero deixar de sonhar, Senhor. Quero apenas aprender a não
+              transformar aquilo que desejo naquilo que acredito já ser verdade.
+            </p>
+
+            <p>Cuida da Juliane, Senhor.</p>
+            <p>
+              Abençoa a vida dela, os sonhos dela, a família dela, o trabalho,
+              os estudos, os projetos e tudo aquilo que ela guarda no coração.
+            </p>
+            <p>
+              Protege-a. Dá-lhe paz, saúde, sabedoria e discernimento para as
+              decisões que precisa tomar.
+            </p>
+
+            <p>
+              Se existir dentro dela alguma confusão em relação a mim, dá-lhe
+              clareza.
+            </p>
+            <p>
+              Mas não permita que ela escolha alguma coisa por culpa, medo, pena
+              ou pressão. Quero que qualquer sentimento que possa nascer entre
+              nós seja verdadeiro e livre.
+            </p>
+            <p>
+              E se aquilo que ela sentir for diferente daquilo que eu desejo,
+              ajuda-me a respeitar a verdade dela.
+            </p>
+
+            <p>
+              Se houver uma semente entre nós, eu entrego essa semente nas Tuas
+              mãos.
+            </p>
+            <p>
+              Eu posso cuidar dela com respeito, carinho, presença e paciência,
+              mas não quero tentar controlar quando ou se ela vai florescer.
+            </p>
+            <p>
+              Se um dia o coração dela também desejar caminhar novamente ao meu
+              lado, que isso aconteça porque nasceu dentro dela de maneira
+              verdadeira.
+            </p>
+
+            <p>Senhor, eu confesso que tenho esperança.</p>
+            <p>Não quero fingir diante de Ti que não tenho.</p>
+            <p>
+              Uma parte de mim gostaria muito que nós pudéssemos olhar um para o
+              outro algum dia e perceber que vale a pena tentar novamente.
+            </p>
+            <p>Mas coloca paz dentro dessa esperança.</p>
+            <p>
+              Que ela não vire obsessão.<br />Que não vire cobrança.<br />Que
+              não me faça abandonar minha própria vida.<br />Que não me faça
+              tentar controlar aquilo que pertence ao tempo, a ela e a Ti.
+            </p>
+
+            <p>
+              Quando eu estiver esperando uma mensagem, uma resposta ou uma
+              decisão, lembra-me de que minha vida continua acontecendo.
+            </p>
+            <p>
+              Que eu consiga colocar o celular de lado, continuar meu dia e
+              entender que esperar não significa permanecer parado.
+            </p>
+
+            <p>Ajuda-me também a continuar crescendo como pessoa.</p>
+            <p>Mostra-me aquilo que preciso melhorar.</p>
+            <p>
+              Ensina-me a ser mais paciente, seguro, equilibrado e verdadeiro.
+            </p>
+            <p>
+              E mostra-me também aquilo que essa história desperta dentro de mim
+              que talvez eu ainda não compreenda.
+            </p>
+            <p>
+              Se existir medo de perder, necessidade de ser escolhido,
+              dificuldade com a incerteza ou alguma ferida antiga falando dentro
+              de mim, ajuda-me a ter coragem para olhar para isso.
+            </p>
+
+            <p>
+              Quando minha cabeça começar a criar mil possibilidades, acalma meu
+              coração.
+            </p>
+            <p>
+              Quando eu tiver vontade de perguntar novamente alguma coisa que
+              ela ainda não sabe responder, dá-me paciência.
+            </p>
+            <p>
+              Quando houver carinho, ensina-me a recebê-lo sem imediatamente
+              exigir uma definição.
+            </p>
+            <p>Quando houver distância, ensina-me a não entrar em desespero.</p>
+            <p>
+              E quando houver oportunidade de estarmos juntos, ajuda-me
+              simplesmente a estar presente.
+            </p>
+
+            <p>Ensina-me a suportar o não saber.</p>
+            <p>
+              Talvez essa seja uma das coisas que eu mais precise aprender
+              agora.
+            </p>
+            <p>Não saber não significa necessariamente perder.</p>
+            <p>
+              Não saber também não significa que aquilo que desejo acontecerá.
+            </p>
+            <p>Às vezes significa apenas que a resposta ainda não existe.</p>
+
+            <p>Eu entrego a Juliane a Ti porque sei que ela não me pertence.</p>
+            <p>Ela tem os próprios sentimentos, escolhas, sonhos e caminhos.</p>
+            <p>E entrego também o meu coração.</p>
+
+            <p>
+              Se nossos caminhos estiverem realmente se aproximando novamente,
+              que eu não precise carregar essa aproximação sozinho.
+            </p>
+            <p>
+              Que exista movimento dos dois lados.<br />Que exista vontade dos
+              dois lados.<br />Que exista escolha dos dois lados.
+            </p>
+            <p>
+              Se houver algo bonito para nascer daqui, que tenha raízes em
+              respeito, amizade, reciprocidade, verdade e amor.
+            </p>
+
+            <p>
+              Acima de tudo, Senhor, que eu não perca a beleza do presente
+              tentando descobrir desesperadamente o futuro.
+            </p>
+            <p>
+              Obrigado pelas conversas, pelos reencontros, pelos momentos bons e
+              por tudo aquilo que já pude aprender através dessa história.
+            </p>
+            <p>Cuida dela.<br />Cuida de mim.</p>
+            <p>
+              E, se for para cuidarmos um do outro novamente, mostra-nos isso no
+              tempo certo.
+            </p>
+
+            <p>Entrego nas Tuas mãos aquilo que eu não consigo controlar.</p>
+            <p>Que seja feita a Tua vontade, com amor, liberdade e paz.</p>
+            <strong>Amém.</strong>
+            <small class="prayer-note"
+              >Essa oração pode mudar conforme eu também mudar.</small
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-soft boundaries-section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Reciprocidade e limites</span>
+            <h2>Estou deixando espaço para ela também escolher?</h2>
+            <p>
+              Ela tem liberdade para escolher o que quer. Eu também tenho
+              limites emocionais. Respeitar o tempo dela não significa que eu
+              precise ficar indefinidamente esperando uma possibilidade.
+            </p>
+          </div>
+          <div class="principles-grid">
+            <article class="principle-card reveal">
+              <span>01</span>
+              <h3>Quem inicia?</h3>
+              <p>
+                Eu sempre começo as conversas ou ela também me procura
+                espontaneamente?
+              </p>
+            </article>
+            <article class="principle-card reveal">
+              <span>02</span>
+              <h3>Quem cria oportunidades?</h3>
+              <p>
+                Eu sempre proponho os encontros ou ela também encontra maneiras
+                de estarmos perto?
+              </p>
+            </article>
+            <article class="principle-card reveal">
+              <span>03</span>
+              <h3>O que faço com o silêncio?</h3>
+              <p>
+                Estou mantendo a conversa porque quero compartilhar algo ou
+                porque tenho medo de perder a proximidade?
+              </p>
+            </article>
+            <article class="principle-card reveal">
+              <span>04</span>
+              <h3>Onde está meu limite?</h3>
+              <p>
+                Qual é a diferença, para mim, entre ter paciência e ficar
+                emocionalmente preso esperando uma possibilidade?
+              </p>
+            </article>
+            <article class="principle-card reveal">
+              <span>05</span>
+              <h3>Meus medos</h3>
+              <p>
+                Tenho medo de criar expectativa demais, pressioná-la sem
+                perceber, confundir carinho com interesse romântico, me
+                machucar, sentir muito mais do que ela, perder nossa
+                proximidade, acelerar as coisas e não conseguir aceitar uma
+                resposta diferente da que desejo.
+              </p>
+            </article>
+            <article class="principle-card reveal">
+              <span>06</span>
+              <h3>O que eu preciso preservar?</h3>
+              <p>
+                Não quero viver esperando uma possibilidade nem fazer meu
+                equilíbrio depender de uma definição que ainda não existe.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section journal-section" id="diario">
+        <div class="container journal-container">
+          <div class="section-heading journal-intro reveal">
+            <span class="eyebrow">Diário do agora</span>
+            <h2>Antes de interpretar, observar.</h2>
+            <p class="journal-subtitle">
+              O que aconteceu, o que senti e o que minha mente acrescentou.
+            </p>
+            <p>
+              Nem tudo que eu sinto é um fato sobre o outro. Este espaço existe
+              para separar acontecimento, emoção, desejo, medo e interpretação.
+            </p>
+          </div>
+
+          <form class="journal-form journal-guided reveal" id="journalForm">
+            <fieldset class="journal-block journal-feelings">
+              <legend>
+                <span class="journal-step">01</span> Como estou me sentindo?
+              </legend>
+              <p class="field-help">
+                Escolha quantas emoções precisar para descrever este momento.
+              </p>
+              <div
+                class="mood-picker"
+                id="moodPicker"
+                aria-label="Emoções sentidas"
+              >
+                <button
+                  type="button"
+                  class="choice-chip mood-button"
+                  data-mood="Calmo"
+                  aria-pressed="false"
+                >
+                  Calmo
+                </button>
+                <button
+                  type="button"
+                  class="choice-chip mood-button"
+                  data-mood="Feliz"
+                  aria-pressed="false"
+                >
+                  Feliz
+                </button>
+                <button
+                  type="button"
+                  class="choice-chip mood-button"
+                  data-mood="Esperançoso"
+                  aria-pressed="false"
+                >
+                  Esperançoso
+                </button>
+                <button
+                  type="button"
+                  class="choice-chip mood-button"
+                  data-mood="Ansioso"
+                  aria-pressed="false"
+                >
+                  Ansioso
+                </button>
+                <button
+                  type="button"
+                  class="choice-chip mood-button"
+                  data-mood="Confuso"
+                  aria-pressed="false"
+                >
+                  Confuso
+                </button>
+                <button
+                  type="button"
+                  class="choice-chip mood-button"
+                  data-mood="Angustiado"
+                  aria-pressed="false"
+                >
+                  Angustiado
+                </button>
+                <button
+                  type="button"
+                  class="choice-chip mood-button"
+                  data-mood="Frustrado"
+                  aria-pressed="false"
+                >
+                  Frustrado
+                </button>
+                <button
+                  type="button"
+                  class="choice-chip mood-button"
+                  data-mood="Inseguro"
+                  aria-pressed="false"
+                >
+                  Inseguro
+                </button>
+                <button
+                  type="button"
+                  class="choice-chip mood-button"
+                  data-mood="Triste"
+                  aria-pressed="false"
+                >
+                  Triste
+                </button>
+                <button
+                  type="button"
+                  class="choice-chip mood-button"
+                  data-mood="Animado"
+                  aria-pressed="false"
+                >
+                  Animado
+                </button>
+                <button
+                  type="button"
+                  class="choice-chip mood-button"
+                  data-mood="Em paz"
+                  aria-pressed="false"
+                >
+                  Em paz
+                </button>
+                <button
+                  type="button"
+                  class="choice-chip mood-button"
+                  data-mood="Com medo"
+                  aria-pressed="false"
+                >
+                  Com medo
+                </button>
+                <button
+                  type="button"
+                  class="choice-chip mood-button"
+                  data-mood="Com saudade"
+                  aria-pressed="false"
+                >
+                  Com saudade
+                </button>
+              </div>
+              <div class="intensity-control">
+                <div class="intensity-heading">
+                  <label for="journalIntensity"
+                    >Quanto isso está mexendo comigo?</label
+                  ><output id="intensityOutput" for="journalIntensity"
+                    ><strong>5</strong> · Moderado</output
+                  >
+                </div>
+                <input
+                  type="range"
+                  id="journalIntensity"
+                  min="1"
+                  max="10"
+                  value="5"
+                />
+                <div class="range-scale" aria-hidden="true">
+                  <span>1</span><span>10</span>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="journal-two-columns">
+              <div class="journal-block concept-block" data-concept="fato">
+                <span class="concept-label">Fato</span>
+                <label for="journalFact">O que realmente aconteceu?</label>
+                <p class="field-help">
+                  Descreva somente aquilo que poderia ser observado ou
+                  registrado, sem tentar explicar a intenção da outra pessoa.
+                </p>
+                <textarea id="journalFact" rows="6" required>
+Perguntei se poderia passar para experimentar o bolo e tomar um café. Ela respondeu que iria descansar um pouco e que, assim que fizesse o bolo, me avisaria.</textarea
+                >
+              </div>
+              <div class="journal-block concept-block" data-concept="emocao">
+                <span class="concept-label">Emoção</span>
+                <label for="journalFeeling">O que isso despertou em mim?</label>
+                <textarea id="journalFeeling" rows="6" required>
+Fiquei feliz com a possibilidade de vê-la, esperançoso e ao mesmo tempo um pouco ansioso esperando para saber se ela vai me avisar.</textarea
+                >
+                <span class="option-label">Percebo isso no meu corpo em:</span>
+                <div
+                  class="choice-group"
+                  id="bodyPicker"
+                  aria-label="Sensação corporal"
+                >
+                  <button
+                    type="button"
+                    class="choice-chip body-button"
+                    data-body="Peito"
+                    aria-pressed="false"
+                  >
+                    Peito
+                  </button>
+                  <button
+                    type="button"
+                    class="choice-chip body-button"
+                    data-body="Estômago"
+                    aria-pressed="false"
+                  >
+                    Estômago
+                  </button>
+                  <button
+                    type="button"
+                    class="choice-chip body-button"
+                    data-body="Garganta"
+                    aria-pressed="false"
+                  >
+                    Garganta
+                  </button>
+                  <button
+                    type="button"
+                    class="choice-chip body-button"
+                    data-body="Cabeça"
+                    aria-pressed="false"
+                  >
+                    Cabeça
+                  </button>
+                  <button
+                    type="button"
+                    class="choice-chip body-button"
+                    data-body="Respiração"
+                    aria-pressed="false"
+                  >
+                    Respiração
+                  </button>
+                  <button
+                    type="button"
+                    class="choice-chip body-button"
+                    data-body="Corpo inteiro"
+                    aria-pressed="false"
+                  >
+                    Corpo inteiro
+                  </button>
+                  <button
+                    type="button"
+                    class="choice-chip body-button"
+                    data-body="Não percebi reação física"
+                    aria-pressed="false"
+                  >
+                    Não percebi reação física
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="journal-block concept-block"
+              data-concept="interpretacao"
+            >
+              <span class="concept-label">Interpretação</span>
+              <label for="journalInterpretation"
+                >O que minha mente começou a contar?</label
+              >
+              <textarea id="journalInterpretation" rows="5">
+Comecei a pensar que talvez ela queira que eu passe lá e que esse aviso possa virar uma oportunidade de nos vermos. Não sei se é isso. Talvez eu esteja dando um significado maior porque quero muito vê-la.</textarea
+              >
+              <span class="option-label"
+                >Quanto eu realmente sei sobre essa interpretação?</span
+              >
+              <div class="certainty-options" id="certaintyOptions">
+                <label class="radio-card"
+                  ><input
+                    type="radio"
+                    name="certainty"
+                    value="É apenas uma hipótese"
+                    checked
+                  /><span>É apenas uma hipótese</span></label
+                >
+                <label class="radio-card"
+                  ><input
+                    type="radio"
+                    name="certainty"
+                    value="Tenho alguns indícios"
+                  /><span>Tenho alguns indícios</span></label
+                >
+                <label class="radio-card"
+                  ><input
+                    type="radio"
+                    name="certainty"
+                    value="Tenho evidências claras"
+                  /><span>Tenho evidências claras</span></label
+                >
+                <label class="radio-card"
+                  ><input
+                    type="radio"
+                    name="certainty"
+                    value="A pessoa me disse diretamente"
+                  /><span>A pessoa me disse diretamente</span></label
+                >
+              </div>
+            </div>
+
+            <div class="journal-two-columns desire-fear-grid">
+              <div class="journal-block concept-block" data-concept="desejo">
+                <span class="concept-label">Desejo</span>
+                <label for="journalDesire"
+                  >O que eu gostaria que isso significasse?</label
+                >
+                <textarea id="journalDesire" rows="6">
+Eu gostaria que isso significasse que existe vontade dos dois de nos vermos e que nossa aproximação está acontecendo naturalmente.</textarea
+                >
+                <p class="field-help">
+                  Isso representa aquilo que você gostaria que fosse verdade.
+                  Desejar algo não significa que aquilo já esteja acontecendo.
+                </p>
+              </div>
+              <div class="journal-block concept-block" data-concept="medo">
+                <span class="concept-label">Medo</span>
+                <label for="journalFear"
+                  >O que tenho medo que isso signifique?</label
+                >
+                <textarea id="journalFear" rows="6">
+Tenho medo de criar expectativa, esperar pelo encontro e descobrir que interpretei a situação de uma maneira maior do que ela realmente era.</textarea
+                >
+                <p class="field-help">
+                  O medo também cria histórias. Ele merece ser ouvido, mas não
+                  precisa ser tratado como previsão.
+                </p>
+              </div>
+            </div>
+
+            <aside class="reality-anchor" aria-labelledby="realityAnchorTitle">
+              <i class="ri-anchor-line" aria-hidden="true"></i>
+              <div>
+                <span class="concept-label">Realidade</span>
+                <h3 id="realityAnchorTitle">
+                  O que eu realmente sei até agora?
+                </h3>
+                <p>
+                  Ela disse que vai me avisar quando fizer o bolo. O resto, por
+                  enquanto, eu não sei.
+                </p>
+                <strong
+                  >Estou tentando esperar pelo que realmente acontecer sem
+                  responder por ela dentro da minha cabeça.</strong
+                >
+              </div>
+            </aside>
+
+            <div class="journal-block control-block">
+              <span class="journal-step">08</span>
+              <h3>O que está nas minhas mãos?</h3>
+              <div class="control-grid">
+                <fieldset class="control-card control-mine">
+                  <legend>Está nas minhas mãos</legend>
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="control"
+                      value="Minha maneira de responder"
+                    />
+                    Minha maneira de responder</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="control"
+                      value="Respeitar o espaço do outro"
+                    />
+                    Respeitar o espaço do outro</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="control"
+                      value="Não cobrar uma definição"
+                    />
+                    Não cobrar uma definição</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="control"
+                      value="Continuar meu dia"
+                    />
+                    Continuar meu dia</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="control"
+                      value="Cuidar da minha ansiedade"
+                    />
+                    Cuidar da minha ansiedade</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="control"
+                      value="Conversar quando for natural"
+                    />
+                    Conversar quando for natural</label
+                  >
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="control"
+                      value="Respeitar meus próprios limites"
+                    />
+                    Respeitar meus próprios limites</label
+                  >
+                </fieldset>
+                <div class="control-card control-outside">
+                  <h4>Não está nas minhas mãos</h4>
+                  <ul>
+                    <li>O sentimento da outra pessoa</li>
+                    <li>Quando ela vai responder</li>
+                    <li>Se ela vai querer me encontrar</li>
+                    <li>O tempo emocional dela</li>
+                    <li>As decisões dela</li>
+                    <li>O futuro da relação</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="journal-two-columns reflection-grid">
+              <div class="journal-block">
+                <span class="journal-step">09</span>
+                <label for="journalAdvice"
+                  >Se um amigo estivesse vivendo exatamente isso, o que eu diria
+                  para ele?</label
+                >
+                <textarea id="journalAdvice" rows="7">
+Eu diria para ele ficar tranquilo. Ele já demonstrou que gostaria de encontrá-la. Agora não precisa perguntar novamente. Se ela quiser, ela sabe como avisá-lo. Enquanto isso, ele pode continuar o próprio dia.</textarea
+                >
+              </div>
+              <fieldset class="journal-block action-block">
+                <legend>
+                  <span class="journal-step">10</span> Preciso fazer alguma
+                  coisa agora?
+                </legend>
+                <label class="action-card"
+                  ><input type="radio" name="action" value="Sim" /><span
+                    ><strong>Sim</strong
+                    ><small
+                      >Existe alguma atitude concreta que preciso tomar.</small
+                    ></span
+                  ></label
+                >
+                <label class="action-card"
+                  ><input
+                    type="radio"
+                    name="action"
+                    value="Não. Posso esperar."
+                    checked
+                  /><span
+                    ><strong>Não. Posso esperar.</strong
+                    ><small
+                      >Nem toda emoção precisa virar uma ação.</small
+                    ></span
+                  ></label
+                >
+                <label class="action-card"
+                  ><input
+                    type="radio"
+                    name="action"
+                    value="Ainda não sei."
+                  /><span
+                    ><strong>Ainda não sei.</strong
+                    ><small>Posso decidir depois.</small></span
+                  ></label
+                >
+              </fieldset>
+            </div>
+
+            <div class="faith-reflection journal-block">
+              <div class="faith-toggle-row">
+                <div>
+                  <span class="journal-step">11</span>
+                  <h3>Entrego o que não posso controlar</h3>
+                  <p class="field-help">
+                    Um espaço opcional para sua fé ou reflexão pessoal.
+                  </p>
+                </div>
+                <label class="switch"
+                  ><input type="checkbox" id="faithToggle" /><span
+                    aria-hidden="true"
+                  ></span
+                  ><small>Quero registrar uma oração/reflexão</small></label
+                >
+              </div>
+              <div class="faith-field" id="faithField" hidden>
+                <label for="journalPrayer">Minha oração ou reflexão</label
+                ><textarea id="journalPrayer" rows="5">
+Senhor, reconheço aquilo que estou sentindo. Entrego a Ti aquilo que não posso controlar. Dá-me serenidade para respeitar o tempo, distinguir esperança de certeza e continuar vivendo o presente com paz.</textarea
+                >
+              </div>
+            </div>
+
+            <aside class="final-checkin">
+              <span class="eyebrow">Antes de guardar esta reflexão...</span>
+              <div class="checkin-lines">
+                <p>
+                  <strong>Fato</strong> O que aconteceu pertence à realidade.
+                </p>
+                <p><strong>Emoção</strong> O que senti pertence a mim.</p>
+                <p>
+                  <strong>Interpretação</strong> O significado que imaginei
+                  ainda pode ser apenas uma hipótese.
+                </p>
+                <p>
+                  <strong>Desejo</strong> O que eu gostaria que acontecesse não
+                  precisa ser confundido com aquilo que acontecerá.
+                </p>
+              </div>
+              <blockquote>
+                Posso sentir tudo isso sem precisar resolver tudo agora.
+              </blockquote>
+            </aside>
+
+            <div class="journal-submit">
+              <button class="button button-primary" type="submit">
+                <i class="ri-save-line" aria-hidden="true"></i> Guardar reflexão
+              </button>
+              <p class="form-message" id="formMessage" aria-live="polite"></p>
+            </div>
+          </form>
+
+          <section class="insight-panel reveal" aria-labelledby="insightTitle">
+            <div class="insight-heading">
+              <span class="eyebrow">Painel de autopercepção</span>
+              <h3 id="insightTitle">Meu estado emocional</h3>
+            </div>
+            <div class="insight-stats" id="insightStats"></div>
+            <p class="insight-note" id="insightNote"></p>
+          </section>
+
+          <div class="journal-entries-wrap reveal">
+            <div class="journal-toolbar">
+              <div>
+                <span class="eyebrow">Histórico</span>
+                <h3>
+                  <i class="ri-book-open-line" aria-hidden="true"></i> Reflexões
+                  salvas
+                </h3>
+              </div>
+              <button type="button" class="text-button" id="clearJournal">
+                <i class="ri-delete-bin-line" aria-hidden="true"></i> Limpar
+                diário
+              </button>
+            </div>
+            <div class="journal-entries" id="journalEntries"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section after-send-section" id="depois-que-envio">
+        <div class="container after-send-container">
+          <header class="section-heading after-send-intro reveal">
+            <span class="eyebrow">Uma conversa que continua em mim</span>
+            <h2>Depois que eu envio</h2>
+            <p class="after-send-subtitle">
+              Às vezes a conversa termina, mas dentro da minha cabeça ela
+              continua.
+            </p>
+            <div class="personal-intro">
+              <p>Tenho percebido uma coisa em mim que quero entender melhor.</p>
+              <p>
+                Às vezes envio uma mensagem de maneira espontânea e, enquanto
+                estou escrevendo, aquilo parece completamente natural. O
+                problema pode começar depois.
+              </p>
+              <p>
+                Se a resposta não vem imediatamente, se ela é diferente daquilo
+                que imaginei ou se deixa alguma coisa em aberto, começo a voltar
+                para minha própria mensagem.
+              </p>
+              <p>
+                Releio. Penso em outras maneiras que poderia ter escrito. Começo
+                a procurar alguma coisa que talvez eu tenha feito errado.
+              </p>
+              <p>
+                E uma mensagem que originalmente parecia simples pode ganhar um
+                tamanho muito maior dentro da minha cabeça.
+              </p>
+            </div>
+          </header>
+
+          <section
+            class="after-block reveal"
+            aria-labelledby="afterSequenceTitle"
+          >
+            <div class="after-block-heading">
+              <span>01</span>
+              <h3 id="afterSequenceTitle">O que acontece depois?</h3>
+            </div>
+            <div class="send-sequence">
+              <article>
+                <b>01</b>
+                <div>
+                  <strong>Eu escrevo</strong>
+                  <p>Naquele momento, parece natural.</p>
+                </div>
+              </article>
+              <article>
+                <b>02</b>
+                <div>
+                  <strong>Eu envio</strong>
+                  <p>A mensagem já não está mais somente nas minhas mãos.</p>
+                </div>
+              </article>
+              <article>
+                <b>03</b>
+                <div>
+                  <strong>Eu espero</strong>
+                  <p>Começo a perceber que não sei qual será a resposta.</p>
+                </div>
+              </article>
+              <article>
+                <b>04</b>
+                <div>
+                  <strong>Eu releio</strong>
+                  <p>
+                    Volto para aquilo que escrevi tentando encontrar algum
+                    problema.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <b>05</b>
+                <div>
+                  <strong>Eu imagino</strong>
+                  <p>
+                    Começo a criar possíveis interpretações da outra pessoa.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <b>06</b>
+                <div>
+                  <strong>Eu questiono</strong>
+                  <p>Será que falei alguma coisa errada?</p>
+                </div>
+              </article>
+              <article>
+                <b>07</b>
+                <div>
+                  <strong>Eu sinto vontade de corrigir</strong>
+                  <p>
+                    Talvez eu devesse explicar melhor, mandar outra mensagem ou
+                    pedir desculpas.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <b>08</b>
+                <div>
+                  <strong>Eu procuro certeza</strong>
+                  <p>Quero descobrir rapidamente se está tudo bem.</p>
+                </div>
+              </article>
+            </div>
+            <blockquote class="after-highlight">
+              E às vezes tudo isso acontece antes de existir qualquer evidência
+              de que alguma coisa realmente deu errado.
+            </blockquote>
+          </section>
+
+          <section
+            class="after-block real-example reveal"
+            aria-labelledby="realExampleTitle"
+          >
+            <div class="after-block-heading">
+              <span>02</span>
+              <h3 id="realExampleTitle">Um exemplo real</h3>
+            </div>
+            <p>
+              Um exemplo recente parece pequeno, mas me ajudou a perceber esse
+              comportamento. Não quero analisar Juliane aqui. Quero observar o
+              que aconteceu comigo depois da conversa.
+            </p>
+            <div class="example-grid">
+              <article>
+                <span class="concept-label">Fato</span>
+                <p>Ela comentou comigo que faria um mini bolo.</p>
+                <p>
+                  Durante a conversa, eu disse que fiquei curioso para
+                  experimentar. Depois perguntei se poderia passar para
+                  experimentar o bolo e tomar um café.
+                </p>
+                <p>
+                  Ela respondeu que iria descansar um pouco e que, assim que
+                  fizesse o bolo, me avisaria.
+                </p>
+                <p>Eu respondi “Ok” e desejei um bom descanso.</p>
+              </article>
+              <article>
+                <span class="concept-label">O que aconteceu dentro de mim</span>
+                <p>
+                  Depois da conversa comecei a pensar se deveria ter feito
+                  aquele convite. Pensei que talvez fosse melhor apenas falar
+                  sobre o bolo e esperar que ela própria me convidasse.
+                </p>
+                <p>
+                  Comecei a me perguntar se fui direto demais. Pensei se deveria
+                  pedir desculpas ou explicar que não queria pressionar.
+                </p>
+                <p>
+                  Mesmo sem ela ter dito que ficou incomodada, comecei a
+                  procurar alguma coisa que talvez eu tivesse feito errado.
+                </p>
+              </article>
+            </div>
+            <p class="phone-note">
+              O acontecimento terminou no celular.<br /><strong
+                >A conversa continuou dentro de mim.</strong
+              >
+            </p>
+          </section>
+
+          <section
+            class="after-block reveal"
+            aria-labelledby="knowImagineTitle"
+          >
+            <div class="after-block-heading">
+              <span>03</span>
+              <h3 id="knowImagineTitle">
+                O que eu sei × o que minha cabeça criou
+              </h3>
+            </div>
+            <div class="know-imagine-grid">
+              <article>
+                <h4>O que eu realmente sei</h4>
+                <ul>
+                  <li>Fiz um convite.</li>
+                  <li>Perguntei se poderia passar.</li>
+                  <li>Ela disse que iria descansar.</li>
+                  <li>Ela disse que me avisaria quando fizesse o bolo.</li>
+                  <li>Eu respondi “Ok, bom descanso”.</li>
+                  <li>Não insisti.</li>
+                  <li>
+                    Até aquele momento, ela não tinha dito que ficou incomodada.
+                  </li>
+                </ul>
+              </article>
+              <article>
+                <h4>O que começou a passar pela minha cabeça</h4>
+                <ul>
+                  <li>“Talvez eu tenha sido invasivo.”</li>
+                  <li>“Talvez não devesse ter perguntado.”</li>
+                  <li>“Talvez ela tenha achado estranho.”</li>
+                  <li>“Talvez eu tenha pressionado.”</li>
+                  <li>“Talvez eu tenha estragado alguma coisa.”</li>
+                  <li>“Talvez precise corrigir minha mensagem.”</li>
+                  <li>“Talvez precise pedir desculpas.”</li>
+                </ul>
+              </article>
+            </div>
+            <p class="after-conclusion">
+              Percebo que existe uma diferença importante entre algo ser
+              possível e existir evidência de que realmente aconteceu.
+            </p>
+          </section>
+
+          <section
+            class="returning-question reveal"
+            aria-labelledby="returningQuestionTitle"
+          >
+            <span class="eyebrow">A pergunta que fica voltando</span>
+            <h3 id="returningQuestionTitle">Será que eu falei errado?</h3>
+            <p>
+              Percebi que posso fazer essa pergunta várias vezes, mesmo quando
+              não aparece nenhuma informação nova. A resposta que procuro talvez
+              nem esteja mais na mensagem.
+            </p>
+            <div class="therapy-hypothesis">
+              <span>Uma hipótese que quero conversar na terapia:</span>
+              <p>
+                Será que, quando pergunto repetidamente se falei algo errado,
+                estou tentando conseguir a garantia de que não fiz nada capaz de
+                afastá-la?
+              </p>
+            </div>
+          </section>
+
+          <section class="after-block reveal" aria-labelledby="exposureTitle">
+            <div class="after-block-heading">
+              <span>05</span>
+              <h3 id="exposureTitle">O arrependimento depois de me expor</h3>
+            </div>
+            <p>
+              Também quero entender se existe uma relação entre me expor e me
+              arrepender depois.
+            </p>
+            <p>
+              Antes de fazer o convite, eu queria vê-la. Por isso perguntei.
+              Depois que perguntei, entretanto, fiquei vulnerável a uma resposta
+              que já não dependia de mim. Foi nesse momento que comecei a
+              questionar o próprio convite.
+            </p>
+            <div class="open-questions">
+              <p>Eu realmente me arrependi do que falei?</p>
+              <p>
+                Ou fiquei desconfortável porque agora precisava esperar pela
+                resposta da outra pessoa?
+              </p>
+              <p>
+                Se ela tivesse respondido imediatamente “pode vir”, eu estaria
+                questionando minha mensagem da mesma maneira?
+              </p>
+              <p>
+                Meu arrependimento aparece porque fiz algo contra meus valores
+                ou porque fiquei vulnerável?
+              </p>
+              <p>
+                Tenho dificuldade em demonstrar aquilo que quero quando não sei
+                se será correspondido?
+              </p>
+            </div>
+          </section>
+
+          <section
+            class="after-block reveal"
+            aria-labelledby="waitingReplyTitle"
+          >
+            <div class="after-block-heading">
+              <span>06</span>
+              <h3 id="waitingReplyTitle">
+                Quando não recebo uma resposta imediatamente
+              </h3>
+            </div>
+            <p>
+              Tenho percebido que o intervalo entre uma mensagem e uma resposta
+              pode ficar emocionalmente muito maior do que o tempo real.
+            </p>
+            <div class="thought-transforms">
+              <p>
+                <span>Ela ainda não respondeu.</span
+                ><i class="ri-arrow-right-line" aria-hidden="true"></i
+                ><strong>Será que não gostou?</strong>
+              </p>
+              <p>
+                <span>Ela respondeu de maneira aberta.</span
+                ><i class="ri-arrow-right-line" aria-hidden="true"></i
+                ><strong>Será que isso foi um não indireto?</strong>
+              </p>
+              <p>
+                <span>Ela disse que vai me avisar.</span
+                ><i class="ri-arrow-right-line" aria-hidden="true"></i
+                ><strong>Será que está tentando evitar dizer não?</strong>
+              </p>
+            </div>
+            <div class="interpretation-flow">
+              <span>Fato</span><i class="ri-arrow-right-line"></i
+              ><span>Interpretação</span><i class="ri-arrow-right-line"></i
+              ><span>Nova interpretação</span><i class="ri-arrow-right-line"></i
+              ><span>Ansiedade</span>
+            </div>
+            <p class="after-question">
+              Em qual momento deixei de observar o que aconteceu e comecei a
+              tentar prever aquilo que a outra pessoa pensa?
+            </p>
+          </section>
+
+          <section
+            class="after-block repair-block reveal"
+            aria-labelledby="repairTitle"
+          >
+            <div class="after-block-heading">
+              <span>07</span>
+              <h3 id="repairTitle">
+                Quando sinto que preciso consertar alguma coisa
+              </h3>
+            </div>
+            <p>
+              Quando começo a acreditar que talvez tenha falado errado, surge
+              outra vontade: fazer alguma coisa imediatamente.
+            </p>
+            <div class="message-examples">
+              <span>“Desculpa se fui invasivo.”</span
+              ><span>“Esquece o que falei.”</span
+              ><span>“Não queria te pressionar.”</span
+              ><span>“Falei brincando.”</span
+              ><span>“Não precisa responder.”</span
+              ><span>“Está tudo bem?”</span>
+            </div>
+            <p>
+              Às vezes uma explicação realmente pode ser necessária. Mas quero
+              aprender a perceber quando existe alguma coisa concreta para
+              reparar e quando estou apenas tentando diminuir minha própria
+              ansiedade.
+            </p>
+            <fieldset class="inline-reflection" id="repairEvidence">
+              <legend>
+                Existe alguma informação nova mostrando que fiz algo errado?
+              </legend>
+              <div class="segmented-options">
+                <label
+                  ><input
+                    type="radio"
+                    name="repair-evidence"
+                    value="Sim"
+                  /><span>Sim</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="repair-evidence"
+                    value="Não"
+                  /><span>Não</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="repair-evidence"
+                    value="Não sei"
+                  /><span>Não sei</span></label
+                >
+              </div>
+              <div
+                class="conditional-answer"
+                id="repairAnswer"
+                aria-live="polite"
+              ></div>
+              <div class="repair-fields" id="repairFields" hidden>
+                <label
+                  >O que aconteceu concretamente?<textarea
+                    id="concreteRepairEvent"
+                    rows="3"
+                  ></textarea></label
+                ><label
+                  >Existe alguma reparação respeitosa que preciso
+                  fazer?<textarea id="respectfulRepair" rows="3"></textarea>
+                </label>
+              </div>
+            </fieldset>
+          </section>
+
+          <section class="after-block reveal" aria-labelledby="apologyTitle">
+            <div class="after-block-heading">
+              <span>08</span>
+              <h3 id="apologyTitle">Pedir desculpas</h3>
+            </div>
+            <p>
+              Pedir desculpas é importante quando reconheço que ultrapassei um
+              limite, machuquei alguém ou fiz algo que precisa ser reparado. Mas
+              quero entender se às vezes sinto vontade de pedir desculpas apenas
+              porque estou inseguro sobre como fui recebido.
+            </p>
+            <div class="open-questions compact">
+              <p>Estou pedindo desculpas por algo que realmente fiz?</p>
+              <p>Ou estou pedindo desculpas por ter demonstrado interesse?</p>
+              <p>Estou tentando reparar um limite que foi ultrapassado?</p>
+              <p>
+                Ou estou tentando obter da outra pessoa a resposta “não
+                aconteceu nada”?
+              </p>
+              <p>
+                Estou usando o pedido de desculpas para cuidar dela ou para
+                aliviar rapidamente minha própria incerteza?
+              </p>
+            </div>
+          </section>
+
+          <section
+            class="after-block reveal"
+            aria-labelledby="afterControlTitle"
+          >
+            <div class="after-block-heading">
+              <span>09</span>
+              <h3 id="afterControlTitle">O que está nas minhas mãos?</h3>
+            </div>
+            <div class="after-control-grid">
+              <article>
+                <h4>Está nas minhas mãos</h4>
+                <ul>
+                  <li>Falar com respeito.</li>
+                  <li>Perguntar em vez de presumir.</li>
+                  <li>Aceitar um não.</li>
+                  <li>Respeitar limites e não insistir.</li>
+                  <li>Reconhecer um erro verdadeiro.</li>
+                  <li>Pedir desculpas quando necessário.</li>
+                  <li>Continuar minha própria rotina.</li>
+                  <li>Observar minhas emoções antes de agir.</li>
+                </ul>
+              </article>
+              <article>
+                <h4>Não está nas minhas mãos</h4>
+                <ul>
+                  <li>Como cada mensagem será interpretada.</li>
+                  <li>Quando alguém responderá.</li>
+                  <li>Qual resposta vou receber.</li>
+                  <li>O sentimento e a vontade da outra pessoa.</li>
+                  <li>Garantir que nunca haverá desconforto.</li>
+                  <li>Controlar o futuro da relação.</li>
+                </ul>
+              </article>
+            </div>
+            <blockquote>
+              Posso ser responsável pelo meu comportamento sem tentar controlar
+              a reação da outra pessoa.
+            </blockquote>
+          </section>
+
+          <section
+            class="after-block checkin-block reveal"
+            aria-labelledby="beforeAnotherTitle"
+          >
+            <div class="after-block-heading">
+              <span>10</span>
+              <h3 id="beforeAnotherTitle">Antes de enviar outra mensagem...</h3>
+            </div>
+            <form id="messageCheckin" class="message-checkin">
+              <fieldset>
+                <legend>
+                  Aconteceu alguma coisa nova desde a última mensagem?
+                </legend>
+                <div class="segmented-options">
+                  <label
+                    ><input type="radio" name="new-event" value="Sim" /><span
+                      >Sim</span
+                    ></label
+                  ><label
+                    ><input type="radio" name="new-event" value="Não" /><span
+                      >Não</span
+                    ></label
+                  >
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>A outra pessoa pediu uma resposta minha?</legend>
+                <div class="segmented-options">
+                  <label
+                    ><input
+                      type="radio"
+                      name="reply-requested"
+                      value="Sim"
+                    /><span>Sim</span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      name="reply-requested"
+                      value="Não"
+                    /><span>Não</span></label
+                  >
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  Existe um problema concreto que precisa ser reparado?
+                </legend>
+                <div class="segmented-options">
+                  <label
+                    ><input
+                      type="radio"
+                      name="concrete-problem"
+                      value="Sim"
+                    /><span>Sim</span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      name="concrete-problem"
+                      value="Não"
+                    /><span>Não</span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      name="concrete-problem"
+                      value="Não sei"
+                    /><span>Não sei</span></label
+                  >
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  Estou querendo mandar porque realmente tenho algo novo para
+                  dizer?
+                </legend>
+                <div class="segmented-options">
+                  <label
+                    ><input
+                      type="radio"
+                      name="something-new"
+                      value="Sim"
+                    /><span>Sim</span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      name="something-new"
+                      value="Não"
+                    /><span>Não</span></label
+                  >
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  Ou estou querendo mandar porque estou desconfortável
+                  esperando?
+                </legend>
+                <div class="segmented-options">
+                  <label
+                    ><input
+                      type="radio"
+                      name="waiting-discomfort"
+                      value="Sim"
+                    /><span>Sim</span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      name="waiting-discomfort"
+                      value="Não"
+                    /><span>Não</span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      name="waiting-discomfort"
+                      value="Talvez"
+                    /><span>Talvez</span></label
+                  >
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>
+                  Se eu esperar um pouco, existe algum prejuízo real?
+                </legend>
+                <div class="segmented-options">
+                  <label
+                    ><input type="radio" name="waiting-harm" value="Sim" /><span
+                      >Sim</span
+                    ></label
+                  ><label
+                    ><input type="radio" name="waiting-harm" value="Não" /><span
+                      >Não</span
+                    ></label
+                  >
+                </div>
+              </fieldset>
+              <div
+                class="checkin-result"
+                id="checkinResult"
+                aria-live="polite"
+              ></div>
+              <button
+                class="button button-primary"
+                type="button"
+                id="chooseWait"
+                hidden
+              >
+                <i class="ri-time-line" aria-hidden="true"></i> Posso esperar
+              </button>
+            </form>
+          </section>
+
+          <div class="after-two-columns">
+            <section
+              class="after-block reveal"
+              aria-labelledby="bodyMessageTitle"
+            >
+              <div class="after-block-heading">
+                <span>11</span>
+                <h3 id="bodyMessageTitle">O que eu sinto no corpo?</h3>
+              </div>
+              <p>
+                Quando começo a questionar uma mensagem, onde percebo isso no
+                corpo?
+              </p>
+              <div class="body-message-options" id="messageBodyOptions">
+                <button type="button" data-value="Aperto no peito">
+                  Aperto no peito</button
+                ><button type="button" data-value="Coração acelerado">
+                  Coração acelerado</button
+                ><button type="button" data-value="Tensão">Tensão</button
+                ><button type="button" data-value="Inquietação">
+                  Inquietação</button
+                ><button type="button" data-value="Vontade de olhar o celular">
+                  Vontade de olhar o celular</button
+                ><button type="button" data-value="Dificuldade de concentração">
+                  Dificuldade de concentração</button
+                ><button type="button" data-value="Estômago">Estômago</button
+                ><button type="button" data-value="Nenhuma sensação específica">
+                  Nenhuma sensação específica</button
+                ><button type="button" data-value="Outra">Outra</button>
+              </div>
+              <label class="after-field"
+                >Como isso aparece em mim?<textarea
+                  id="bodyDescription"
+                  rows="4"
+                ></textarea>
+              </label>
+            </section>
+            <section
+              class="after-block reveal"
+              aria-labelledby="lookingForTitle"
+            >
+              <div class="after-block-heading">
+                <span>12</span>
+                <h3 id="lookingForTitle">
+                  Talvez a pergunta não seja somente sobre a mensagem.
+                </h3>
+              </div>
+              <div class="open-questions compact">
+                <p>
+                  Quando pergunto “falei errado?”, o que estou tentando
+                  descobrir?
+                </p>
+                <p>Quero saber se fui respeitoso?</p>
+                <p>Quero saber se ela continua gostando de conversar comigo?</p>
+                <p>Quero ter certeza de que não estraguei a aproximação?</p>
+                <p>Quero eliminar a possibilidade de rejeição?</p>
+                <p>
+                  Quero sentir que ainda existe uma possibilidade entre nós?
+                </p>
+                <p>Quero que alguém me diga que vai ficar tudo bem?</p>
+                <p>Por que preciso dessa certeza?</p>
+                <p>
+                  Existe alguma experiência anterior que torna essa dúvida
+                  especialmente difícil para mim?
+                </p>
+              </div>
+            </section>
+          </div>
+
+          <section
+            class="after-block friend-exercise reveal"
+            aria-labelledby="friendExerciseTitle"
+          >
+            <div class="after-block-heading">
+              <span>13</span>
+              <h3 id="friendExerciseTitle">Se fosse um amigo</h3>
+            </div>
+            <p>Imagine que um amigo mostrasse exatamente a mesma conversa.</p>
+            <div class="friend-grid">
+              <label
+                >O que eu diria para ele?<textarea
+                  id="friendResponse"
+                  rows="4"
+                ></textarea></label
+              ><label
+                >Eu julgaria a mensagem dele com a mesma intensidade com que
+                estou julgando a minha?<textarea
+                  id="friendJudgment"
+                  rows="4"
+                ></textarea></label
+              ><label
+                >Que conselho eu daria para ele agora?<textarea
+                  id="friendAdviceAfterSend"
+                  rows="4"
+                ></textarea>
+              </label>
+            </div>
+          </section>
+
+          <aside class="moment-reality reveal">
+            <span class="concept-label">Realidade do momento</span>
+            <h3>O que existe agora?</h3>
+            <p>Eu fiz um convite porque gostaria de vê-la.</p>
+            <p>Ela ainda não confirmou a visita.</p>
+            <p>Ela disse que me avisaria quando fizesse o bolo.</p>
+            <p>Eu já respondi.</p>
+            <p>Neste momento não existe outra ação necessária.</p>
+            <strong>Posso desejar uma resposta sem precisar produzi-la.</strong>
+          </aside>
+
+          <section
+            class="after-block after-therapy reveal"
+            aria-labelledby="afterTherapyTitle"
+          >
+            <div class="after-block-heading">
+              <span>15</span>
+              <h3 id="afterTherapyTitle">Quero conversar sobre isso</h3>
+            </div>
+            <div class="therapy-question-list">
+              <p>
+                Por que começo a questionar minhas mensagens depois de
+                enviá-las?
+              </p>
+              <p>
+                Por que a ausência de uma confirmação imediata me faz procurar
+                um erro em mim?
+              </p>
+              <p>
+                Tenho dificuldade de tolerar a possibilidade de ter sido mal
+                interpretado?
+              </p>
+              <p>
+                Existe medo de rejeição por trás da necessidade de revisar a
+                conversa?
+              </p>
+              <p>
+                Por que demonstrar aquilo que quero pode gerar arrependimento
+                depois?
+              </p>
+              <p>
+                Tenho necessidade de garantir que a outra pessoa não ficou
+                incomodada?
+              </p>
+              <p>
+                Por que sinto vontade de reparar situações antes mesmo de saber
+                se existe algo para reparar?
+              </p>
+              <p>
+                Consigo aceitar que posso agir respeitosamente e, mesmo assim,
+                receber uma resposta que eu não gostaria?
+              </p>
+              <p>
+                Quanto da minha ansiedade está na mensagem e quanto está naquilo
+                que não consigo controlar depois que a envio?
+              </p>
+              <p>
+                Por que a possibilidade de afastar alguém importante para mim
+                desperta tanta preocupação?
+              </p>
+            </div>
+            <label class="after-field"
+              >Quero conversar com minha psicóloga sobre...<textarea
+                id="afterTherapyNotes"
+                rows="6"
+              ></textarea>
+            </label>
+            <div class="after-save-row">
+              <button
+                class="button button-primary"
+                type="button"
+                id="saveAfterTherapyNotes"
+              >
+                <i class="ri-save-line"></i> Guardar anotação
+              </button>
+              <p
+                class="form-message"
+                id="afterTherapyMessage"
+                aria-live="polite"
+              ></p>
+            </div>
+          </section>
+
+          <section
+            class="situation-tool reveal"
+            aria-labelledby="situationToolTitle"
+          >
+            <div class="after-block-heading">
+              <span>16</span>
+              <h3 id="situationToolTitle">Registro de uma situação</h3>
+            </div>
+            <p>
+              Um espaço para separar o que aconteceu daquilo que continuou
+              acontecendo dentro de mim.
+            </p>
+            <form id="messageSituationForm" class="situation-form">
+              <div class="form-grid">
+                <label
+                  >Data e hora<input
+                    type="datetime-local"
+                    id="situationDate"
+                    required /></label
+                ><label
+                  >Pessoa ou situação<input
+                    type="text"
+                    id="situationName"
+                    required /></label
+                ><label
+                  >Emoção principal<input
+                    type="text"
+                    id="situationEmotion"
+                    required /></label
+                ><label
+                  >Intensidade:
+                  <output id="situationIntensityOutput">5</output>/10<input
+                    type="range"
+                    id="situationIntensity"
+                    min="1"
+                    max="10"
+                    value="5"
+                /></label>
+              </div>
+              <label
+                >O que eu escrevi?<textarea
+                  id="situationMessage"
+                  rows="4"
+                  required
+                ></textarea></label
+              ><label
+                >O que a pessoa respondeu?<textarea
+                  id="situationReply"
+                  rows="4"
+                ></textarea></label
+              ><label
+                >O que aconteceu concretamente?<textarea
+                  id="situationFact"
+                  rows="4"
+                  required
+                ></textarea></label
+              ><label
+                >Qual foi meu primeiro pensamento depois?<textarea
+                  id="situationFirstThought"
+                  rows="4"
+                ></textarea></label
+              ><label
+                >O que comecei a temer?<textarea
+                  id="situationFear"
+                  rows="4"
+                ></textarea></label
+              ><label
+                >O que senti?<textarea
+                  id="situationFeeling"
+                  rows="4"
+                ></textarea>
+              </label>
+              <fieldset>
+                <legend>Senti vontade de mandar outra mensagem?</legend>
+                <div class="segmented-options">
+                  <label
+                    ><input
+                      type="radio"
+                      name="wanted-followup"
+                      value="Sim"
+                    /><span>Sim</span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      name="wanted-followup"
+                      value="Não"
+                      checked
+                    /><span>Não</span></label
+                  >
+                </div>
+              </fieldset>
+              <div id="followupFields" class="form-grid" hidden>
+                <label
+                  >O que eu queria mandar?<textarea
+                    id="wantedMessage"
+                    rows="3"
+                  ></textarea></label
+                ><label
+                  >Por que eu queria mandar?<textarea
+                    id="wantedMessageReason"
+                    rows="3"
+                  ></textarea>
+                </label>
+              </div>
+              <label
+                >Existe evidência concreta de que fiz algo errado?<textarea
+                  id="situationEvidence"
+                  rows="3"
+                ></textarea></label
+              ><label
+                >O que eu sei até agora?<textarea
+                  id="situationKnown"
+                  rows="3"
+                ></textarea></label
+              ><label
+                >O que ainda não sei?<textarea
+                  id="situationUnknown"
+                  rows="3"
+                ></textarea>
+              </label>
+              <fieldset>
+                <legend>O que posso fazer agora?</legend>
+                <div class="decision-options">
+                  <label
+                    ><input
+                      type="radio"
+                      name="situation-decision"
+                      value="Responder normalmente"
+                    /><span>Responder normalmente</span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      name="situation-decision"
+                      value="Reparar algo concreto"
+                    /><span>Reparar algo concreto</span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      name="situation-decision"
+                      value="Esperar"
+                      checked
+                    /><span>Esperar</span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      name="situation-decision"
+                      value="Continuar meu dia"
+                    /><span>Continuar meu dia</span></label
+                  ><label
+                    ><input
+                      type="radio"
+                      name="situation-decision"
+                      value="Ainda não sei"
+                    /><span>Ainda não sei</span></label
+                  >
+                </div>
+              </fieldset>
+              <button class="button button-primary" type="submit">
+                <i class="ri-save-line"></i> Guardar situação
+              </button>
+              <p
+                class="form-message"
+                id="situationFormMessage"
+                aria-live="polite"
+              ></p>
+            </form>
+          </section>
+
+          <section
+            class="message-history reveal"
+            aria-labelledby="messageHistoryTitle"
+          >
+            <div class="message-insights" id="messageInsights"></div>
+            <p class="message-insight-note" id="messageInsightNote"></p>
+            <div class="history-heading">
+              <div>
+                <span class="eyebrow">Histórico</span>
+                <h3 id="messageHistoryTitle">
+                  Mensagens que continuei vivendo depois de enviar
+                </h3>
+              </div>
+            </div>
+            <div
+              id="messageHistoryEntries"
+              class="message-history-entries"
+            ></div>
+          </section>
+
+          <footer class="after-send-closing reveal">
+            <h3>Nem toda dúvida precisa virar uma nova mensagem.</h3>
+            <p>
+              Às vezes posso observar, esperar e descobrir o que a realidade tem
+              para me mostrar.
+            </p>
+            <strong
+              >O que acontece dentro de mim quando escolho não fazer nada
+              agora?</strong
+            >
+          </footer>
+        </div>
+      </section>
+
+      <section class="section response-hands-section" id="fora-das-minhas-maos">
+        <div class="container response-hands-container">
+          <header class="section-heading response-hands-intro reveal">
+            <span class="eyebrow">O que a incerteza provoca em mim</span>
+            <h2>Quando a resposta não está mais nas minhas mãos</h2>
+            <p class="response-hands-subtitle">
+              Talvez uma das partes mais difíceis não seja falar aquilo que
+              sinto. Talvez seja descobrir o que acontece comigo depois que eu
+              falo.
+            </p>
+            <div class="personal-intro">
+              <p>Percebi uma coisa que quero conversar na terapia.</p>
+              <p>
+                Às vezes consigo tomar coragem, falar alguma coisa, demonstrar
+                interesse ou fazer um convite. Enquanto estou fazendo isso,
+                parece natural.
+              </p>
+              <p>
+                Mas depois existe um momento em que não tenho mais nada para
+                fazer. Eu já falei. A outra pessoa recebeu aquilo. E agora
+                existe uma resposta que não depende mais de mim.
+              </p>
+              <p>
+                Quando percebi isso recentemente, senti uma aflição muito maior
+                do que esperava. Foi quase um: “Meu Deus... e agora?”
+              </p>
+              <p>
+                Quero entender melhor por que esse momento mexe tanto comigo.
+              </p>
+            </div>
+          </header>
+
+          <section
+            class="after-block reveal"
+            aria-labelledby="cakeEpisodeTitle"
+          >
+            <div class="after-block-heading">
+              <span>01</span>
+              <h3 id="cakeEpisodeTitle">
+                Um exemplo pequeno que ficou grande dentro de mim
+              </h3>
+            </div>
+            <article class="cake-episode">
+              <span class="concept-label">O episódio do bolo</span>
+              <p>Ela comentou comigo que faria um mini bolo.</p>
+              <p>
+                Eu disse que fiquei curioso para experimentar. Depois perguntei
+                se poderia passar para experimentar o bolo e tomar um café.
+              </p>
+              <p>
+                Ela disse que iria descansar um pouco e que, assim que fizesse o
+                bolo, me avisaria.
+              </p>
+              <p>Eu respondi: “Ok. Bom descanso.”</p>
+              <p>A conversa terminou ali naquele momento.</p>
+              <small>Objetivamente, parece uma situação bastante simples.</small
+              ><strong>Mas dentro de mim não terminou ali.</strong>
+            </article>
+          </section>
+
+          <section
+            class="after-block reveal"
+            aria-labelledby="insideSequenceTitle"
+          >
+            <div class="after-block-heading">
+              <span>02</span>
+              <h3 id="insideSequenceTitle">
+                O que aconteceu depois dentro de mim
+              </h3>
+            </div>
+            <div class="send-sequence response-sequence">
+              <article>
+                <b>01</b>
+                <div>
+                  <strong>Eu fiz o convite</strong>
+                  <p>Eu queria vê-la e demonstrei isso.</p>
+                </div>
+              </article>
+              <article>
+                <b>02</b>
+                <div>
+                  <strong>Ela disse que avisaria</strong>
+                  <p>
+                    Eu não recebi nem uma confirmação nem uma recusa naquele
+                    momento.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <b>03</b>
+                <div>
+                  <strong>A resposta saiu das minhas mãos</strong>
+                  <p>Eu já tinha dito aquilo que queria.</p>
+                </div>
+              </article>
+              <article>
+                <b>04</b>
+                <div>
+                  <strong>Comecei a esperar</strong>
+                  <p>
+                    Agora eu precisava descobrir o que ela escolheria fazer.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <b>05</b>
+                <div>
+                  <strong>Comecei a pensar</strong>
+                  <p>Será que ela vai avisar?</p>
+                </div>
+              </article>
+              <article>
+                <b>06</b>
+                <div>
+                  <strong>Comecei a revisar</strong>
+                  <p>Será que eu deveria ter feito aquele convite?</p>
+                </div>
+              </article>
+              <article>
+                <b>07</b>
+                <div>
+                  <strong>Veio o arrependimento</strong>
+                  <p>Talvez fosse melhor eu não ter falado nada.</p>
+                </div>
+              </article>
+              <article>
+                <b>08</b>
+                <div>
+                  <strong>Veio a vontade de ter certeza</strong>
+                  <p>Eu queria saber imediatamente se estava tudo bem.</p>
+                </div>
+              </article>
+            </div>
+            <blockquote class="after-highlight">
+              O convite levou poucos segundos. A espera começou a ocupar muito
+              mais espaço.
+            </blockquote>
+          </section>
+
+          <section
+            class="after-block reveal"
+            aria-labelledby="distinctionTitle"
+          >
+            <div class="after-block-heading">
+              <span>03</span>
+              <h3 id="distinctionTitle">Uma distinção importante</h3>
+            </div>
+            <div class="distinction-grid">
+              <article>
+                <h4>Ter feito algo errado</h4>
+                <p>
+                  Significaria existir algum comportamento concreto meu que
+                  ultrapassou um limite, desrespeitou a outra pessoa ou
+                  precisava ser reparado.
+                </p>
+              </article>
+              <article>
+                <h4>Ter medo da resposta</h4>
+                <p>
+                  Significa que demonstrei aquilo que queria e agora preciso
+                  conviver com a possibilidade de receber uma resposta diferente
+                  daquela que gostaria.
+                </p>
+              </article>
+            </div>
+            <p class="after-question">
+              Será que estou confundindo arrependimento com medo da resposta?
+            </p>
+          </section>
+
+          <section class="caught-phrase reveal">
+            <span class="eyebrow">Uma frase que me pegou</span>
+            <blockquote>
+              Você convidou.<br />Ela disse que avisaria.<br />Agora permita que
+              ela escolha o que fazer com isso.
+            </blockquote>
+            <p>Quando li isso, minha reação foi:</p>
+            <strong>“Meu Deus... :(”</strong>
+            <h3>Por que essa frase me atingiu tanto?</h3>
+          </section>
+
+          <section
+            class="after-block reveal"
+            aria-labelledby="behindReactionTitle"
+          >
+            <div class="after-block-heading">
+              <span>05</span>
+              <h3 id="behindReactionTitle">
+                O que existe por trás do “Meu Deus...”?
+              </h3>
+            </div>
+            <div class="open-questions">
+              <p>Foi medo de ela não me chamar?</p>
+              <p>Foi medo de rejeição?</p>
+              <p>Foi arrependimento por ter demonstrado que queria vê-la?</p>
+              <p>
+                Foi perceber que eu não poderia fazer mais nada para influenciar
+                a resposta?
+              </p>
+              <p>Foi medo de perder uma possibilidade?</p>
+              <p>Foi a sensação de ficar vulnerável?</p>
+              <p>
+                Foi perceber que agora ela poderia escolher algo diferente
+                daquilo que eu gostaria?
+              </p>
+              <p>Foi dificuldade em simplesmente esperar?</p>
+              <p>
+                Foi vontade de ter controle sobre uma situação que não depende
+                somente de mim?
+              </p>
+              <p>
+                Por que deixar alguém escolher livremente pode despertar tanta
+                ansiedade em mim?
+              </p>
+            </div>
+          </section>
+
+          <section
+            class="after-block honest-wish reveal"
+            aria-labelledby="indifferenceTitle"
+          >
+            <div class="after-block-heading">
+              <span>06</span>
+              <h3 id="indifferenceTitle">
+                Também não quero fingir indiferença
+              </h3>
+            </div>
+            <p>A verdade é que eu gostaria que ela me chamasse.</p>
+            <p>
+              Eu gostaria de receber uma mensagem dizendo que o bolo ficou
+              pronto. Gostaria que ela dissesse que posso passar. Gostaria de
+              tomar aquele café com ela.
+            </p>
+            <p>
+              Isso me deixaria feliz. Não quero fingir que tanto faz quando, na
+              verdade, não tanto faz.
+            </p>
+            <p>
+              Mas estou começando a perceber uma diferença: eu posso querer
+              muito uma resposta sem ter como garantir que ela aconteça.
+            </p>
+            <strong>Querer não é controlar.</strong>
+          </section>
+
+          <div class="response-two-columns">
+            <section class="after-block reveal" aria-labelledby="fearNoTitle">
+              <div class="after-block-heading">
+                <span>07</span>
+                <h3 id="fearNoTitle">O medo do não</h3>
+              </div>
+              <p>
+                Talvez exista outra pergunta aqui: se ela disser não, o que
+                exatamente eu sinto que estou perdendo?
+              </p>
+              <div class="open-questions compact">
+                <p>Um café?</p>
+                <p>Uma oportunidade de vê-la?</p>
+                <p>A esperança de uma aproximação?</p>
+                <p>A possibilidade que comecei a imaginar?</p>
+                <p>A sensação de estar sendo escolhido?</p>
+                <p>Alguma coisa relacionada à nossa história?</p>
+                <p>
+                  Por que um pequeno convite pode carregar emocionalmente tantas
+                  outras coisas?
+                </p>
+              </div>
+            </section>
+            <section class="after-block reveal" aria-labelledby="freedomsTitle">
+              <div class="after-block-heading">
+                <span>08</span>
+                <h3 id="freedomsTitle">A liberdade da outra pessoa</h3>
+              </div>
+              <p>Quando faço um convite, existem duas liberdades.</p>
+              <p>
+                Eu tenho liberdade para perguntar. E a outra pessoa tem
+                liberdade para responder.
+              </p>
+              <p>
+                Isso parece simples quando escrevo. Mas quero entender por que
+                emocionalmente pode ser tão difícil.
+              </p>
+              <p>
+                Respeitar a liberdade dela não significa que eu não possa
+                desejar que a resposta seja sim. Significa apenas reconhecer que
+                o meu desejo não pode decidir a resposta por ela.
+              </p>
+            </section>
+          </div>
+
+          <section
+            class="after-block my-freedom reveal"
+            aria-labelledby="myFreedomTitle"
+          >
+            <div class="after-block-heading">
+              <span>09</span>
+              <h3 id="myFreedomTitle">Minha liberdade também existe</h3>
+            </div>
+            <p>
+              Existe outra coisa que quero aprender. Enquanto ela escolhe aquilo
+              que deseja fazer, minha vida não precisa ficar suspensa.
+            </p>
+            <p>Eu também posso escolher.</p>
+            <div class="freedom-options">
+              <span>Continuar meu dia</span><span>Trabalhar</span
+              ><span>Conversar com outras pessoas</span><span>Descansar</span
+              ><span>Fazer aquilo que tinha planejado</span
+              ><span>Colocar o celular de lado</span
+              ><span>Sentir ansiedade sem necessariamente agir sobre ela</span
+              ><span>Desejar que aconteça sem ficar parado esperando</span>
+            </div>
+            <strong
+              >Dar liberdade para outra pessoa escolher não significa abandonar
+              a minha própria liberdade.</strong
+            >
+          </section>
+
+          <section
+            class="after-block waiting-urge reveal"
+            aria-labelledby="waitingUrgeTitle"
+          >
+            <div class="after-block-heading">
+              <span>10</span>
+              <h3 id="waitingUrgeTitle">
+                Quando esperar começa a incomodar...
+              </h3>
+            </div>
+            <fieldset>
+              <legend>O que sinto vontade de fazer?</legend>
+              <div class="urge-options" id="waitingUrges">
+                <button type="button" data-value="Mandar outra mensagem">
+                  Mandar outra mensagem</button
+                ><button type="button" data-value="Perguntar novamente">
+                  Perguntar novamente</button
+                ><button
+                  type="button"
+                  data-value="Explicar melhor o que quis dizer"
+                >
+                  Explicar melhor o que quis dizer</button
+                ><button type="button" data-value="Pedir desculpas">
+                  Pedir desculpas</button
+                ><button type="button" data-value="Conferir o celular">
+                  Conferir o celular</button
+                ><button type="button" data-value="Procurar interpretações">
+                  Procurar interpretações</button
+                ><button
+                  type="button"
+                  data-value="Perguntar para alguém o que significa"
+                >
+                  Perguntar para alguém o que a mensagem significa</button
+                ><button
+                  type="button"
+                  data-value="Imaginar possíveis respostas"
+                >
+                  Imaginar possíveis respostas</button
+                ><button type="button" data-value="Apenas esperar">
+                  Apenas esperar</button
+                ><button type="button" data-value="Outro">Outro</button>
+              </div>
+            </fieldset>
+            <label class="after-field"
+              >O que eu espero conseguir fazendo isso?<textarea
+                id="urgeExpectation"
+                rows="4"
+              ></textarea>
+            </label>
+            <fieldset>
+              <legend>
+                Estou tentando comunicar alguma coisa nova ou tentando diminuir
+                a incerteza?
+              </legend>
+              <div class="segmented-options">
+                <label
+                  ><input
+                    type="radio"
+                    name="urge-reason"
+                    value="Tenho algo novo para comunicar"
+                  /><span>Tenho algo novo para comunicar</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="urge-reason"
+                    value="Estou tentando diminuir a incerteza"
+                  /><span>Estou tentando diminuir a incerteza</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="urge-reason"
+                    value="Os dois"
+                  /><span>Os dois</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="urge-reason"
+                    value="Não sei"
+                  /><span>Não sei</span></label
+                >
+              </div>
+            </fieldset>
+          </section>
+
+          <section
+            class="after-block necessary-action reveal"
+            aria-labelledby="necessaryActionTitle"
+          >
+            <div class="after-block-heading">
+              <span>11</span>
+              <h3 id="necessaryActionTitle">
+                Preciso fazer alguma coisa agora?
+              </h3>
+            </div>
+            <fieldset>
+              <legend>
+                Existe alguma ação realmente necessária neste momento?
+              </legend>
+              <div class="segmented-options">
+                <label
+                  ><input
+                    type="radio"
+                    name="necessary-action"
+                    value="Sim"
+                  /><span>Sim</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="necessary-action"
+                    value="Não"
+                  /><span>Não</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="necessary-action"
+                    value="Ainda não sei"
+                  /><span>Ainda não sei</span></label
+                >
+              </div>
+              <div
+                id="necessaryActionResult"
+                class="conditional-answer"
+                aria-live="polite"
+              ></div>
+              <button
+                class="button button-primary"
+                type="button"
+                id="responseHandsWait"
+                hidden
+              >
+                <i class="ri-time-line" aria-hidden="true"></i> Posso esperar
+              </button>
+            </fieldset>
+          </section>
+
+          <section
+            class="after-block reveal"
+            aria-labelledby="handsControlTitle"
+          >
+            <div class="after-block-heading">
+              <span>12</span>
+              <h3 id="handsControlTitle">O que está nas minhas mãos</h3>
+            </div>
+            <div class="after-control-grid">
+              <article>
+                <h4>Está nas minhas mãos</h4>
+                <ul>
+                  <li>Fazer um convite respeitosamente.</li>
+                  <li>Ser sincero.</li>
+                  <li>Perguntar em vez de presumir.</li>
+                  <li>Respeitar a resposta.</li>
+                  <li>Não insistir.</li>
+                  <li>Reconhecer um erro verdadeiro.</li>
+                  <li>Continuar vivendo meu dia.</li>
+                  <li>Cuidar da maneira como ajo.</li>
+                  <li>Conversar sobre aquilo que sinto na terapia.</li>
+                </ul>
+              </article>
+              <article>
+                <h4>Não está nas minhas mãos</h4>
+                <ul>
+                  <li>A resposta que vou receber.</li>
+                  <li>O momento em que ela responderá.</li>
+                  <li>O sentimento dela.</li>
+                  <li>Se ela vai querer me ver.</li>
+                  <li>O significado que ela dará ao convite.</li>
+                  <li>O futuro da nossa aproximação.</li>
+                  <li>O que outra pessoa escolhe.</li>
+                </ul>
+              </article>
+            </div>
+            <blockquote>
+              Talvez eu esteja aprendendo a diferença entre responsabilidade e
+              controle.
+            </blockquote>
+          </section>
+
+          <section class="silence-interval reveal">
+            <span class="eyebrow">O silêncio entre uma mensagem e outra</span>
+            <h3>O que eu faço com o intervalo?</h3>
+            <p>
+              Existe um intervalo entre aquilo que eu pergunto e aquilo que a
+              outra pessoa responde. Talvez seja justamente nesse intervalo que
+              minha cabeça trabalhe mais.
+            </p>
+            <div class="open-questions">
+              <p>Consigo deixar esse espaço existir?</p>
+              <p>Preciso preenchê-lo com interpretações?</p>
+              <p>
+                Preciso transformá-lo imediatamente em rejeição ou esperança?
+              </p>
+              <p>Consigo simplesmente dizer: “Eu ainda não sei”?</p>
+            </div>
+            <strong>Eu ainda não sei.</strong>
+          </section>
+
+          <section
+            class="after-block moment-exercise reveal"
+            aria-labelledby="momentExerciseTitle"
+          >
+            <div class="after-block-heading">
+              <span>14</span>
+              <h3 id="momentExerciseTitle">Um exercício para esse momento</h3>
+            </div>
+            <div class="exercise-fields">
+              <label
+                >1. O que aconteceu?<textarea id="handsWhatHappened" rows="4">
+Perguntei se poderia passar para experimentar o bolo e tomar um café. Ela disse que iria descansar e que me avisaria quando fizesse o bolo.</textarea
+                ></label
+              ><label
+                >2. O que eu quero?<textarea id="handsWhatWant" rows="4">
+Quero que ela me avise e gostaria que ela me convidasse para passar lá.</textarea
+                ></label
+              ><label
+                >3. O que eu temo?<textarea id="handsWhatFear" rows="4">
+Tenho medo de ela não me chamar e também comecei a ter medo de ter feito algo errado ao perguntar.</textarea
+                ></label
+              ><label
+                >4. O que eu sei?<textarea id="handsWhatKnow" rows="4">
+Ela disse que me avisaria. Ainda não tenho uma resposta sobre a visita.</textarea
+                ></label
+              ><label
+                >5. O que preciso fazer agora?<textarea
+                  id="handsWhatDo"
+                  rows="4"
+                >
+Nada em relação ao convite. Posso continuar meu dia e esperar para ver o que realmente acontece.</textarea
+                >
+              </label>
+            </div>
+          </section>
+
+          <aside class="no-strategy reveal">
+            <h3>Não transformar espera em estratégia</h3>
+            <p>
+              Esperar não significa: “Vou sumir para ela sentir minha falta.”
+            </p>
+            <p>Não significa: “Vou ignorá-la para provocar uma reação.”</p>
+            <p>Não significa: “Agora é a vez dela correr atrás.”</p>
+            <p>
+              Quero aprender a esperar sem transformar silêncio em estratégia.
+            </p>
+            <strong
+              >Estou esperando porque já comuniquei aquilo que precisava
+              comunicar.</strong
+            >
+          </aside>
+
+          <section
+            class="returning-question deeper-question reveal"
+            aria-labelledby="deeperHandsTitle"
+          >
+            <span class="eyebrow">Uma pergunta mais profunda</span>
+            <h3 id="deeperHandsTitle">
+              Talvez seja aqui que exista alguma coisa importante
+            </h3>
+            <blockquote>
+              Por que deixar a resposta nas mãos da outra pessoa me dá tanta
+              aflição?
+            </blockquote>
+            <div class="open-questions">
+              <p>Por que preciso saber rapidamente aquilo que ela escolheu?</p>
+              <p>
+                O que imagino que pode acontecer enquanto não tenho uma
+                resposta?
+              </p>
+              <p>
+                Por que uma possibilidade de rejeição faz com que eu comece a
+                questionar meu próprio comportamento?
+              </p>
+              <p>Tenho dificuldade em me sentir vulnerável?</p>
+              <p>
+                Por que demonstrar que quero alguma coisa pode me deixar
+                arrependido depois?
+              </p>
+              <p>
+                Consigo continuar me sentindo seguro mesmo quando alguém ainda
+                não decidiu se quer aquilo que eu quero?
+              </p>
+              <p>O que significa para mim ser escolhido?</p>
+              <p>
+                Por que ser escolhido por essa pessoa especificamente tem tanto
+                peso?
+              </p>
+            </div>
+          </section>
+
+          <section
+            class="after-block therapy-response-form reveal"
+            aria-labelledby="showTherapyTitle"
+          >
+            <div class="after-block-heading">
+              <span>17</span>
+              <h3 id="showTherapyTitle">Para mostrar na terapia</h3>
+            </div>
+            <div class="exercise-fields">
+              <label
+                >Quando pensei que agora dependia dela, senti...<textarea
+                  id="handsTherapyFeeling"
+                  rows="4"
+                ></textarea></label
+              ><label
+                >O que mais me assustou nessa situação foi...<textarea
+                  id="handsTherapyFear"
+                  rows="4"
+                ></textarea></label
+              ><label
+                >Se eu pudesse explicar para minha psicóloga por que isso mexeu
+                comigo, eu diria...<textarea
+                  id="handsTherapyExplain"
+                  rows="4"
+                ></textarea></label
+              ><label
+                >O que eu gostaria de compreender sobre mim...<textarea
+                  id="handsTherapyUnderstand"
+                  rows="4"
+                ></textarea>
+              </label>
+            </div>
+            <button
+              class="button button-primary"
+              type="button"
+              id="saveHandsTherapy"
+            >
+              <i class="ri-save-line" aria-hidden="true"></i> Guardar para a
+              terapia
+            </button>
+            <p
+              class="form-message"
+              id="handsTherapyMessage"
+              aria-live="polite"
+            ></p>
+          </section>
+
+          <section
+            class="after-block revisit-response reveal"
+            aria-labelledby="revisitResponseTitle"
+          >
+            <div class="after-block-heading">
+              <span>18</span>
+              <h3 id="revisitResponseTitle">Revisitar depois</h3>
+            </div>
+            <fieldset>
+              <legend>O que aconteceu depois?</legend>
+              <div class="segmented-options">
+                <label
+                  ><input
+                    type="radio"
+                    name="hands-outcome"
+                    value="Ela retomou o assunto"
+                  /><span>Ela retomou o assunto</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="hands-outcome"
+                    value="Houve encontro"
+                  /><span>Houve encontro</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="hands-outcome"
+                    value="Não houve encontro"
+                  /><span>Não houve encontro</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="hands-outcome"
+                    value="O assunto simplesmente mudou"
+                  /><span>O assunto simplesmente mudou</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="hands-outcome"
+                    value="Outra coisa aconteceu"
+                  /><span>Outra coisa aconteceu</span></label
+                >
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Minha preocupação inicial se confirmou?</legend>
+              <div class="segmented-options">
+                <label
+                  ><input
+                    type="radio"
+                    name="hands-confirmed"
+                    value="Sim"
+                  /><span>Sim</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="hands-confirmed"
+                    value="Parcialmente"
+                  /><span>Parcialmente</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="hands-confirmed"
+                    value="Não"
+                  /><span>Não</span></label
+                ><label
+                  ><input
+                    type="radio"
+                    name="hands-confirmed"
+                    value="Ainda não sei"
+                  /><span>Ainda não sei</span></label
+                >
+              </div>
+            </fieldset>
+            <div class="exercise-fields">
+              <label
+                >Olhando agora para aquele “Meu Deus...”, o que penso?<textarea
+                  id="handsLaterView"
+                  rows="4"
+                ></textarea></label
+              ><label
+                >O que aprendi sobre minha reação?<textarea
+                  id="handsLaterLearning"
+                  rows="4"
+                ></textarea>
+              </label>
+            </div>
+            <button
+              class="button button-primary"
+              type="button"
+              id="saveHandsRevisit"
+            >
+              <i class="ri-save-line" aria-hidden="true"></i> Guardar o que
+              aconteceu depois
+            </button>
+            <p
+              class="form-message"
+              id="handsRevisitMessage"
+              aria-live="polite"
+            ></p>
+          </section>
+
+          <footer class="response-hands-closing reveal">
+            <p>Eu posso querer que ela me escolha.</p>
+            <p>
+              Posso torcer para que a resposta seja aquela que desejo. Posso
+              ficar feliz se acontecer. Também posso ficar triste se não
+              acontecer.
+            </p>
+            <p>
+              Mas talvez exista algo que eu esteja começando a aprender: depois
+              que expresso aquilo que quero de maneira respeitosa, chega um
+              momento em que preciso permitir que a outra pessoa também escolha.
+            </p>
+            <strong>Isso ainda é difícil para mim.</strong>
+            <p>Talvez eu não precise resolver essa dificuldade hoje.</p>
+            <p>Posso levá-la para a terapia.</p>
+          </footer>
+        </div>
+      </section>
+
+        <section class="section revolt-section" id="quando-me-revolto">
+          <div class="container revolt-container">
+            <header class="section-heading revolt-intro reveal"><span class="eyebrow">Uma parte que também existe em mim</span><h2>Quando eu me revolto</h2><p class="revolt-subtitle">Tem horas em que eu não quero mais interpretar, esperar ou entender. Eu só quero colocar tudo para fora.</p><small>Sentir isso não significa que preciso agir imediatamente sobre isso.</small><div class="personal-intro"><p>Nem sempre o que aparece em mim é bonito, organizado ou racional. Tem momentos em que fico revoltado, principalmente quando estou cansado de pensar, esperar e não conseguir chegar a uma resposta.</p><p>Posso sair de “será que eu falei alguma coisa errada?” para “quer saber? Vou falar tudo”. E esse “tudo” mistura o que aconteceu, o que senti, o que suspeito, o que temo e até coisas que minha cabeça criou sem qualquer prova.</p><p>Às vezes aparece a vontade de falar tudo e depois bloquear, como se eu pudesse colocar um ponto final antes de descobrir aquilo que a outra pessoa teria para dizer. Quero entender melhor esse meu movimento.</p></div></header>
+
+            <section class="after-block reveal"><div class="after-block-heading"><span>01</span><h3>Da ansiedade para a revolta</h3></div><div class="revolt-path"><span>Eu não sei</span><i>↓</i><span>Eu espero</span><i>↓</i><span>Eu penso</span><i>↓</i><span>Eu interpreto</span><i>↓</i><span>Eu penso de novo</span><i>↓</i><span>Eu procuro certeza</span><i>↓</i><span>Eu não encontro</span><i>↓</i><span>Eu me canso</span><i>↓</i><span>Eu me frustro</span><i>↓</i><span>Eu me revolto</span><i>↓</i><strong>“Então vou falar tudo.”</strong></div><p>Quero descobrir se existe esse caminho dentro de mim. Não sei se acontece sempre assim. Mas reconheço que, em alguns momentos, parece existir uma passagem da ansiedade para a irritação.</p></section>
+
+            <section class="after-block revolt-card reveal"><div class="after-block-heading"><span>02</span><h3>O que eu quero fazer quando estou revoltado?</h3></div><div class="revolt-choices" id="revoltImpulses"><button>Mandar um textão</button><button>Falar tudo que estou pensando</button><button>Cobrar uma resposta</button><button>Perguntar diretamente o que está acontecendo</button><button>Falar coisas que não consigo provar</button><button>Acusar</button><button>Dizer tudo que sei</button><button>Dizer tudo que suspeito</button><button>Encerrar a conversa</button><button>Bloquear</button><button>Apagar mensagens</button><button>Sumir</button><button>Dizer que não quero mais saber</button><button>Fazer a pessoa entender como estou me sentindo</button><button>Conseguir uma resposta imediatamente</button><button>Outra coisa</button></div><label class="after-field">O que eu gostaria que acontecesse depois de fazer isso?<textarea id="revoltExpectedAfter" rows="4"></textarea></label></section>
+
+            <section class="after-block reveal"><div class="after-block-heading"><span>03</span><h3>Mas o que significa “tudo”?</h3></div><div class="revolt-four-grid"><label><strong>O que eu sei</strong><small>Coisas que realmente aconteceram, sem interpretar a intenção da outra pessoa.</small><textarea id="revoltKnow" rows="5"></textarea></label><label><strong>O que eu sinto</strong><small>Raiva, carinho, frustração, medo, esperança, tristeza, ansiedade, saudade ou cansaço.</small><textarea id="revoltFeel" rows="5"></textarea></label><label><strong>O que eu suspeito</strong><small>Possibilidades que considero, mas não consigo confirmar.</small><textarea id="revoltSuspect" rows="5"></textarea></label><label><strong>O que minha revolta está dizendo</strong><small>Pensamentos do calor do momento que podem ou não permanecer.</small><textarea id="revoltSays" rows="5"></textarea></label></div></section>
+
+            <section class="after-block reveal"><div class="after-block-heading"><span>04</span><h3>Fato não é a mesma coisa que interpretação</h3></div><div class="fact-interpret-grid"><p><b>Fato</b>Ela disse que me avisaria.</p><p><b>Interpretação</b>“Ela está me enrolando.”</p><p><b>Fato</b>Ela ainda não respondeu.</p><p><b>Interpretação</b>“Ela não se importa comigo.”</p><p><b>Fato</b>Fiz um convite e não recebi uma confirmação naquele momento.</p><p><b>Interpretação</b>“Ela está brincando comigo.”</p><p><b>Fato</b>Eu não sei o que ela está pensando.</p><p><b>Interpretação</b>“Eu sei exatamente o que ela está fazendo.”</p></div><blockquote>Uma interpretação pode até acabar se mostrando verdadeira. Mas, enquanto não tenho evidência suficiente, continua sendo uma interpretação.</blockquote></section>
+
+            <section class="after-block reveal"><div class="after-block-heading"><span>05</span><h3>Eu posso falar sobre uma suspeita?</h3></div><div class="language-shifts"><p><del>“Você está me evitando.”</del><ins>“Estou começando a sentir medo de que você esteja me evitando.”</ins></p><p><del>“Você está me enrolando.”</del><ins>“Essa indefinição está me deixando confuso e frustrado.”</ins></p><p><del>“Você está brincando comigo.”</del><ins>“Eu não estou conseguindo entender a situação e isso está mexendo comigo.”</ins></p></div><p>Não significa que eu precise enviar essas frases. A diferença serve primeiro para eu perceber quando descrevo minha experiência e quando atribuo uma intenção à outra pessoa.</p></section>
+
+            <section class="revolt-outburst reveal"><h3>Quer saber? Vou falar tudo.</h3><div class="revolt-four-grid"><label>O que aconteceu imediatamente antes?<textarea id="beforeOutburst" rows="4"></textarea></label><label>O que eu esperava que acontecesse?<textarea id="expectedEvent" rows="4"></textarea></label><label>O que não aconteceu?<textarea id="didNotHappen" rows="4"></textarea></label><label>O que estou sentindo agora?<div class="revolt-choices" id="outburstFeelings"><button>Raiva</button><button>Frustração</button><button>Ansiedade</button><button>Tristeza</button><button>Medo</button><button>Impotência</button><button>Cansaço</button><button>Confusão</button><button>Decepção</button><button>Saudade</button><button>Outra</button></div></label></div><label class="range-field">Intensidade: <output id="outburstIntensityOutput">5</output>/10<input type="range" id="outburstIntensity" min="1" max="10" value="5"></label></section>
+
+            <section class="after-block reveal"><div class="after-block-heading"><span>07</span><h3>A vontade de bloquear</h3></div><p>Às vezes minha vontade não é apenas falar tudo. É falar tudo e depois bloquear. Quero entender o que estou procurando quando penso nisso.</p><div class="open-questions"><p>Quero realmente encerrar essa relação ou a sensação de não saber?</p><p>Quero distância da pessoa ou da ansiedade que estou sentindo?</p><p>Estou colocando um limite que realmente preciso?</p><p>Quero impedir que chegue uma resposta que talvez eu não queira ouvir?</p><p>Estou tentando me proteger ou recuperar uma sensação de controle?</p><p>Existe alguma parte minha esperando que a pessoa perceba minha ausência?</p><p>Eu ainda faria isso se soubesse que a pessoa nunca tentaria falar comigo novamente?</p></div><blockquote class="revolt-big-question">Se eu bloquear e ela nunca mais tentar entrar em contato comigo, essa ainda é realmente a decisão que eu quero tomar?</blockquote></section>
+
+            <section class="after-block reveal"><div class="after-block-heading"><span>08</span><h3>Bloquear como limite × bloquear no calor do momento</h3></div><div class="distinction-grid"><article><h4>Um limite pensado</h4><ul><li>Percebi que esse contato está me fazendo mal.</li><li>Considerei alternativas.</li><li>Não faço isso para provocar reação.</li><li>Estou preparado para manter a decisão.</li><li>Consigo explicar por que preciso da distância.</li><li>Provavelmente ainda faria isso com a emoção menor.</li></ul></article><article><h4>Uma decisão no calor do momento</h4><ul><li>Estou muito irritado agora.</li><li>Quero acabar com a sensação imediatamente.</li><li>Quero falar tudo primeiro.</li><li>Quero que a pessoa entenda minha revolta.</li><li>Não sei se amanhã ainda desejaria bloquear.</li><li>Parte de mim talvez espere alguma reação.</li></ul></article></div><p class="after-question">Não preciso decidir agora em qual categoria estou. Posso observar.</p></section>
+
+            <section class="after-block reveal"><div class="after-block-heading"><span>09</span><h3>Se eu falar tudo e bloquear, o que acontece depois?</h3></div><div class="open-questions"><p>Vou sentir alívio? E depois?</p><p>Posso me arrepender?</p><p>Vou querer saber o que ela teria respondido?</p><p>Vou desbloquear depois?</p><p>Vou continuar pensando mesmo com a pessoa bloqueada?</p><p>Estou resolvendo a situação ou apenas interrompendo o contato?</p><p>Isso representa aquilo que realmente quero?</p><p>Estou preparado para realmente encerrar a aproximação?</p></div><blockquote class="revolt-big-question">Se essa for a última conversa entre nós, eu gostaria que ela tivesse acontecido dessa maneira?</blockquote></section>
+
+            <section class="unsent-tool reveal"><span class="eyebrow">Escrever sem enviar</span><h3>Não enviar a primeira versão</h3><p>Posso escrever raiva, palavrão, acusação, contradição, medo, carinho, frustração ou despedida. Este campo existe para registrar, não para enviar.</p><textarea id="unsentText" rows="12" placeholder="Escreva aqui exatamente aquilo que você teria vontade de mandar."></textarea><button class="button button-primary" type="button" id="saveUnsent"><i class="ri-save-line" aria-hidden="true"></i> Guardar sem enviar</button><p class="form-message" id="unsentMessage" aria-live="polite"></p></section>
+
+            <section class="after-block separation-stage reveal" id="separationStage" hidden><div class="after-block-heading"><span>11</span><h3>Olhando para aquilo que escrevi...</h3></div><div class="revolt-four-grid"><label>O que é fato?<textarea id="unsentFact" rows="4"></textarea></label><label>O que é sentimento?<textarea id="unsentFeeling" rows="4"></textarea></label><label>O que é interpretação?<textarea id="unsentInterpretation" rows="4"></textarea></label><label>O que é suspeita?<textarea id="unsentSuspicion" rows="4"></textarea></label><label>O que é medo?<textarea id="unsentFear" rows="4"></textarea></label><label>O que realmente preciso comunicar?<textarea id="unsentNeed" rows="4"></textarea></label><label>O que escrevi somente porque estava revoltado?<textarea id="unsentHeat" rows="4"></textarea></label></div><button class="button button-primary" type="button" id="saveSeparation">Guardar separação</button></section>
+
+            <section class="after-block revisit-unsent reveal"><div class="after-block-heading"><span>12</span><h3>Eu ainda quero dizer isso?</h3></div><p>Quando minha emoção estiver diferente, quero voltar aqui.</p><label class="range-field">Quanto está minha revolta agora? <output id="laterRevoltOutput">0</output>/10<input type="range" id="laterRevolt" min="0" max="10" value="0"></label><fieldset><legend>Eu ainda concordo com aquilo que escrevi?</legend><div class="segmented-options"><label><input type="radio" name="still-agree" value="Sim, completamente"><span>Sim, completamente</span></label><label><input type="radio" name="still-agree" value="Em parte"><span>Em parte</span></label><label><input type="radio" name="still-agree" value="Não"><span>Não</span></label><label><input type="radio" name="still-agree" value="Não sei"><span>Não sei</span></label></div></fieldset><fieldset><legend>Eu ainda gostaria de enviar exatamente aquele texto?</legend><div class="segmented-options"><label><input type="radio" name="still-send" value="Sim"><span>Sim</span></label><label><input type="radio" name="still-send" value="Não"><span>Não</span></label><label><input type="radio" name="still-send" value="Eu mudaria bastante"><span>Eu mudaria bastante</span></label><label><input type="radio" name="still-send" value="Não sei"><span>Não sei</span></label></div></fieldset><label class="after-field">O que mudou desde que escrevi?<textarea id="unsentChanged" rows="4"></textarea></label><button class="button button-primary" type="button" id="saveUnsentRevisit">Guardar revisão</button></section>
+
+            <aside class="no-strategy reveal"><h3>Pausa não é jogo</h3><p>Não enviar imediatamente não significa fazer jogo, dar gelo, desaparecer para provocar saudade, fazer a pessoa correr atrás ou fingir indiferença.</p><p>Significa apenas reconhecer que estou muito mobilizado e não preciso transformar imediatamente aquilo que sinto em uma ação.</p><strong>Posso sentir primeiro e decidir depois.</strong></aside>
+
+            <section class="after-block reveal"><div class="after-block-heading"><span>14</span><h3>Quando a raiva quer uma resposta</h3></div><div class="revolt-choices" id="angerWants"><button>Ser compreendido</button><button>Ser escolhido</button><button>Ter minha frustração reconhecida</button><button>Uma explicação</button><button>Uma definição</button><button>Ouvir que não fiz nada errado</button><button>Que a outra pessoa sinta o que sinto</button><button>Acabar com a incerteza</button><button>Recuperar controle</button><button>Realmente terminar</button></div><label class="after-field">O que minha revolta está tentando conseguir?<textarea id="angerGoal" rows="4"></textarea></label></section>
+
+            <section class="after-block reveal"><div class="after-block-heading"><span>15</span><h3>Por trás da frase “não aguento mais”</h3></div><div class="sentence-grid"><label>Eu não aguento mais...<textarea id="cantTake" rows="3"></textarea></label><label>Estou cansado de...<textarea id="tiredOf" rows="3"></textarea></label><label>Eu gostaria que...<textarea id="wishThat" rows="3"></textarea></label><label>Tenho raiva porque...<textarea id="angryBecause" rows="3"></textarea></label><label>Tenho medo de...<textarea id="afraidOf" rows="3"></textarea></label><label>O que mais dói nisso é...<textarea id="hurtsMost" rows="3"></textarea></label><label>Se pudesse ter uma resposta, gostaria de saber...<textarea id="wantedAnswer" rows="3"></textarea></label><label>Se não receber essa resposta, tenho medo de...<textarea id="noAnswerFear" rows="3"></textarea></label></div></section>
+
+            <section class="anger-truth reveal"><h3>Eu posso estar com raiva dela.</h3><p>Posso ficar frustrado, discordar de uma atitude ou não gostar da maneira como uma situação aconteceu. Gostar de alguém não significa nunca sentir raiva dessa pessoa.</p><p>Mas sentir raiva também não significa que tudo aquilo que penso durante a raiva seja necessariamente verdade.</p><strong>Minha emoção é real.<br>Minha interpretação ainda pode estar errada.</strong></section>
+
+            <section class="after-block reveal"><div class="after-block-heading"><span>17</span><h3>Eu posso estar com raiva da situação</h3></div><p>Talvez nem toda revolta seja diretamente contra ela.</p><div class="revolt-choices" id="angerTargets"><button>Estou com raiva dela</button><button>Da situação</button><button>De não saber</button><button>De esperar</button><button>Estou frustrado comigo</button><button>Estou cansado de pensar nisso</button><button>Gostaria que tudo fosse mais simples</button><button>É uma mistura</button></div></section>
+
+            <section class="after-block decision-check reveal"><div class="after-block-heading"><span>18</span><h3>Antes de tomar uma decisão definitiva</h3></div><fieldset><legend>Estou pensando em fazer algo que pode mudar significativamente nossa relação?</legend><div class="segmented-options"><label><input type="radio" name="major-decision" value="Sim"><span>Sim</span></label><label><input type="radio" name="major-decision" value="Não"><span>Não</span></label></div></fieldset><div id="majorDecisionFields" hidden><label class="range-field">Minha emoção está em qual intensidade? <output id="decisionIntensityOutput">5</output>/10<input type="range" id="decisionIntensity" min="1" max="10" value="5"></label><div class="decision-questions"><fieldset><legend>Existe necessidade de decidir isso agora?</legend><div class="segmented-options decision-radio" data-name="urgent-decision"></div></fieldset><fieldset><legend>Essa decisão continuará fazendo sentido amanhã?</legend><div class="segmented-options decision-radio" data-name="tomorrow-sense"></div></fieldset><fieldset><legend>Estou disposto a aceitar todas as consequências?</legend><div class="segmented-options decision-radio" data-name="accept-consequences"></div></fieldset></div><label class="after-field">Se eu não fizer nada agora, o que acontece?<textarea id="nothingNow" rows="4"></textarea></label></div><blockquote>Uma emoção urgente não significa necessariamente que exista uma decisão urgente.</blockquote></section>
+
+            <section class="after-block reveal"><div class="after-block-heading"><span>19</span><h3>Se existir algo que realmente preciso falar</h3></div><p>Esperar a emoção diminuir não significa engolir tudo para sempre. Pode existir alguma coisa verdadeira que eu realmente precise comunicar.</p><div class="open-questions"><p>Depois que a revolta diminuiu, isso ainda importa?</p><p>Consigo falar sem transformar suspeitas em fatos?</p><p>Consigo dizer como me senti?</p><p>Existe uma necessidade ou limite que preciso comunicar?</p><p>Estou preparado para ouvir uma resposta diferente da que gostaria?</p></div><label class="after-field">O que realmente preciso dizer?<textarea id="realNeedToSay" rows="5"></textarea></label></section>
+
+            <section class="after-block current-example reveal"><div class="after-block-heading"><span>20</span><h3>Um exemplo do momento atual</h3></div><dl><dt>O que aconteceu</dt><dd>Fiz um convite para experimentar o bolo e tomar um café. Ela disse que iria descansar e que me avisaria quando fizesse o bolo.</dd><dt>O que eu sei</dt><dd>Ela disse que me avisaria.</dd><dt>O que eu não sei</dt><dd>Não sei se ela vai me convidar. Não sei o que está pensando sobre o convite.</dd><dt>O que começou a acontecer comigo</dt><dd>Comecei a questionar se deveria ter feito o convite e procurei uma resposta antes que ela existisse.</dd><dt>O que às vezes tenho vontade de fazer</dt><dd>Tem momentos em que fico tão cansado de pensar que quero falar tudo, mesmo o que não consigo provar, jogar tudo no ar e bloquear.</dd><dt>O que estou fazendo em vez disso</dt><dd>Estou tentando perceber essa vontade antes de agir e quero levá-la para a terapia.</dd></dl></section>
+
+            <section class="returning-question revolt-therapy reveal"><span class="eyebrow">Para minha psicóloga</span><h3>Quero entender isso em mim</h3><div class="open-questions"><p>Por que a incerteza às vezes se transforma em revolta?</p><p>Quando quero bloquear, quero distância ou acabar com a angústia?</p><p>Existe relação entre minha necessidade de certeza e minha raiva?</p><p>Por que alterno entre esperança e vontade de desistir?</p><p>O que acontece quando sinto que não controlo o resultado?</p><p>Como reconhecer minha raiva sem agir imediatamente?</p><p>Como diferenciar um limite de uma decisão tomada durante uma explosão?</p><p>Como comunicar frustração sem acusar com base no que imaginei?</p></div><blockquote>Se eu quero tanto uma resposta, por que às vezes também tenho vontade de impedir que essa resposta chegue?</blockquote></section>
+
+            <section class="revolt-register reveal"><div class="after-block-heading"><span>22</span><h3>Meu estado agora</h3></div><form id="revoltForm"><label>Situação<input id="revoltSituation" required></label><fieldset><legend>Agora estou</legend><div class="revolt-choices single" id="revoltEmotion"><button type="button">Tranquilo</button><button type="button">Ansioso</button><button type="button">Irritado</button><button type="button">Revoltado</button><button type="button">Frustrado</button><button type="button">Triste</button><button type="button">Confuso</button><button type="button">Com medo</button><button type="button">Cansado</button><button type="button">Esperançoso</button><button type="button">Outro</button></div></fieldset><label class="range-field">Intensidade: <output id="revoltIntensityOutput">5</output>/10<input type="range" id="revoltIntensity" min="0" max="10" value="5"></label><label>O que aconteceu?<textarea id="revoltHappened" rows="4" required></textarea></label><label>O que pensei?<textarea id="revoltThought" rows="4"></textarea></label><label>O que tive vontade de fazer?<textarea id="revoltUrge" rows="4"></textarea></label><label>O que realmente fiz?<textarea id="revoltDid" rows="4"></textarea></label><fieldset><legend>Estou com vontade de fazer algo impulsivamente?</legend><div class="segmented-options"><label><input type="radio" name="impulsive-now" value="Sim"><span>Sim</span></label><label><input type="radio" name="impulsive-now" value="Não" checked><span>Não</span></label></div></fieldset><div id="impulsiveFields" hidden><label>O quê?<textarea id="impulsiveWhat" rows="3"></textarea></label><fieldset><legend>Isso precisa acontecer agora?</legend><div class="segmented-options"><label><input type="radio" name="needs-now" value="Sim"><span>Sim</span></label><label><input type="radio" name="needs-now" value="Não"><span>Não</span></label><label><input type="radio" name="needs-now" value="Não sei"><span>Não sei</span></label></div></fieldset></div><fieldset><legend>Posso registrar primeiro e decidir depois?</legend><div class="segmented-options"><label><input type="radio" name="record-first" value="Sim" checked><span>Sim</span></label><label><input type="radio" name="record-first" value="Não"><span>Não</span></label></div></fieldset><button class="button button-primary" type="submit"><i class="ri-save-line" aria-hidden="true"></i> Guardar momento</button><p class="form-message" id="revoltFormMessage"></p></form></section>
+
+            <section class="message-history reveal"><div class="history-heading"><span class="eyebrow">Histórico</span><h3>Momentos em que eu quis jogar tudo no ar</h3></div><div id="revoltHistory" class="message-history-entries"></div></section>
+
+            <footer class="revolt-closing reveal"><h3>Nem tudo que penso quando estou revoltado é mentira.<br>Mas nem tudo é necessariamente verdade.</h3><p>Minha raiva pode estar tentando me mostrar que existe alguma coisa importante acontecendo dentro de mim. Posso escutá-la sem entregar imediatamente o volante para ela.</p><strong>Hoje eu não preciso escolher entre engolir tudo e explodir tudo.</strong><p>Talvez exista um espaço entre essas duas coisas. Quero descobrir esse espaço.</p></footer>
+          </div>
         </section>
 
         <section class="section therapy-section" id="terapia">
-            <div class="container therapy-grid">
-                <div class="section-heading reveal"><span class="eyebrow">Anotações pessoais</span><h2>O que eu quero levar para a terapia.</h2><p>Não espero responder tudo de uma vez. São perguntas que aparecem quando tento entender por que essa história ocupa tanto espaço em mim.</p></div>
-                <div class="therapy-notes reveal">
-                    <p>Por que estou sentindo tudo isso com tanta intensidade?</p>
-                    <p>Por que tenho dificuldade em deixar algumas respostas simplesmente em aberto?</p>
-                    <p>Por que pequenos gestos dela conseguem alterar tanto meu estado emocional?</p>
-                    <p>Tenho medo de perdê-la novamente?</p>
-                    <p>Quanto estou vivendo o presente e quanto estou projetando um futuro?</p>
-                    <p>Estou conseguindo respeitar o tempo dela sem abandonar minhas próprias necessidades?</p>
-                    <p>Como saber quando esperança começa a virar expectativa?</p>
-                    <p>Como diferenciar amor, paixão, saudade, apego e desejo de reconciliação no que estou vivendo?</p>
-                    <p>Por que sinto tanta necessidade de interpretar o que ela sente?</p>
-                    <p>Como posso gostar dela sem fazer meu equilíbrio emocional depender da resposta dela?</p>
-                    <p>Existe alguma coisa da nossa história antiga que estou tentando reparar agora?</p>
-                    <p>Por que ser escolhido por ela parece tão importante para mim?</p>
-                    <p>O que eu faria se descobrisse que ela gosta muito de mim, mas não romanticamente?</p>
-                    <p>E se ela quisesse tentar novamente, o que precisaria ser diferente da nossa relação antiga?</p>
-                    <p>O que eu realmente quero construir com ela hoje?</p>
-                </div>
-                <div class="therapy-extra reveal">
-                    <label for="therapyNotes">Outras coisas que quero conversar hoje</label>
-                    <textarea id="therapyNotes" rows="7" placeholder="Posso escrever sem organizar perfeitamente. Uma frase já é suficiente."></textarea>
-                    <div class="therapy-save-row"><button class="button button-primary" type="button" id="saveTherapyNotes"><i class="ri-save-line" aria-hidden="true"></i> Guardar anotações</button><p id="therapyNotesMessage" class="form-message" aria-live="polite"></p></div>
-                    <p class="field-help">Estas anotações ficam salvas somente neste navegador.</p>
-                </div>
+        <div class="container therapy-grid">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Anotações pessoais</span>
+            <h2>O que eu quero levar para a terapia.</h2>
+            <p>
+              Não espero responder tudo de uma vez. São perguntas que aparecem
+              quando tento entender por que essa história ocupa tanto espaço em
+              mim.
+            </p>
+          </div>
+          <div class="therapy-notes reveal">
+            <p>Por que estou sentindo tudo isso com tanta intensidade?</p>
+            <p>
+              Por que tenho dificuldade em deixar algumas respostas simplesmente
+              em aberto?
+            </p>
+            <p>
+              Por que pequenos gestos dela conseguem alterar tanto meu estado
+              emocional?
+            </p>
+            <p>Tenho medo de perdê-la novamente?</p>
+            <p>
+              Quanto estou vivendo o presente e quanto estou projetando um
+              futuro?
+            </p>
+            <p>
+              Estou conseguindo respeitar o tempo dela sem abandonar minhas
+              próprias necessidades?
+            </p>
+            <p>Como saber quando esperança começa a virar expectativa?</p>
+            <p>
+              Como diferenciar amor, paixão, saudade, apego e desejo de
+              reconciliação no que estou vivendo?
+            </p>
+            <p>
+              Por que sinto tanta necessidade de interpretar o que ela sente?
+            </p>
+            <p>
+              Como posso gostar dela sem fazer meu equilíbrio emocional depender
+              da resposta dela?
+            </p>
+            <p>
+              Existe alguma coisa da nossa história antiga que estou tentando
+              reparar agora?
+            </p>
+            <p>Por que ser escolhido por ela parece tão importante para mim?</p>
+            <p>
+              O que eu faria se descobrisse que ela gosta muito de mim, mas não
+              romanticamente?
+            </p>
+            <p>
+              E se ela quisesse tentar novamente, o que precisaria ser diferente
+              da nossa relação antiga?
+            </p>
+            <p>O que eu realmente quero construir com ela hoje?</p>
+          </div>
+          <div class="therapy-extra reveal">
+            <label for="therapyNotes"
+              >Outras coisas que quero conversar hoje</label
+            >
+            <textarea
+              id="therapyNotes"
+              rows="7"
+              placeholder="Posso escrever sem organizar perfeitamente. Uma frase já é suficiente."
+            ></textarea>
+            <div class="therapy-save-row">
+              <button
+                class="button button-primary"
+                type="button"
+                id="saveTherapyNotes"
+              >
+                <i class="ri-save-line" aria-hidden="true"></i> Guardar
+                anotações
+              </button>
+              <p
+                id="therapyNotesMessage"
+                class="form-message"
+                aria-live="polite"
+              ></p>
             </div>
-        </section>
+            <p class="field-help">
+              Estas anotações ficam salvas somente neste navegador.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section class="section unknown-section" id="nao-sei">
-            <div class="container unknown-inner reveal">
-                <span class="eyebrow">O que eu ainda não sei</span>
-                <h2>Não tenho todas as respostas.</h2>
-                <div class="unknown-list"><p>Não sei exatamente o que ela sente.</p><p>Não sei se vamos voltar.</p><p>Não sei quanto tempo essa aproximação vai durar.</p><p>Não sei se estou interpretando algumas coisas além do que realmente significam.</p><p>Não sei exatamente por que isso mexe tanto comigo.</p><p>Não sei qual será o lugar dela na minha vida daqui para frente.</p></div>
-                <strong>Hoje eu não preciso transformar esses “não sei” em respostas. Posso levá-los comigo para a terapia.</strong>
-            </div>
-        </section>
+      <section class="section unknown-section" id="nao-sei">
+        <div class="container unknown-inner reveal">
+          <span class="eyebrow">O que eu ainda não sei</span>
+          <h2>Não tenho todas as respostas.</h2>
+          <div class="unknown-list">
+            <p>Não sei exatamente o que ela sente.</p>
+            <p>Não sei se vamos voltar.</p>
+            <p>Não sei quanto tempo essa aproximação vai durar.</p>
+            <p>
+              Não sei se estou interpretando algumas coisas além do que
+              realmente significam.
+            </p>
+            <p>Não sei exatamente por que isso mexe tanto comigo.</p>
+            <p>
+              Não sei qual será o lugar dela na minha vida daqui para frente.
+            </p>
+          </div>
+          <strong
+            >Hoje eu não preciso transformar esses “não sei” em respostas. Posso
+            levá-los comigo para a terapia.</strong
+          >
+        </div>
+      </section>
 
-        <section class="closing section">
-            <div class="container closing-inner reveal">
-                <span class="eyebrow">Por enquanto</span>
-                <h2>Estou tentando entender o que acontece dentro de mim.</h2>
-                <p>Ainda tenho esperança, medo, carinho e muitas perguntas. Não quero resolver por ela aquilo que somente ela pode dizer. Quero conseguir falar sobre tudo isso com sinceridade e descobrir o que essa história revela sobre mim.</p>
-                <a class="button button-ghost-light" href="#topo"><i class="ri-arrow-up-line" aria-hidden="true"></i> Voltar ao início</a>
-            </div>
-        </section>
+      <section class="closing section">
+        <div class="container closing-inner reveal">
+          <span class="eyebrow">Por enquanto</span>
+          <h2>Estou tentando entender o que acontece dentro de mim.</h2>
+          <p>
+            Ainda tenho esperança, medo, carinho e muitas perguntas. Não quero
+            resolver por ela aquilo que somente ela pode dizer. Quero conseguir
+            falar sobre tudo isso com sinceridade e descobrir o que essa
+            história revela sobre mim.
+          </p>
+          <a class="button button-ghost-light" href="#topo"
+            ><i class="ri-arrow-up-line" aria-hidden="true"></i> Voltar ao
+            início</a
+          >
+        </div>
+      </section>
     </main>
 
-    <footer class="site-footer"><div class="container footer-inner"><p>Um mapa do que está acontecendo dentro de mim.</p><p>Ainda estou tentando entender.</p></div></footer>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>Um mapa do que está acontecendo dentro de mim.</p>
+        <p>Ainda estou tentando entender.</p>
+      </div>
+    </footer>
     <script type="module" src="js/main.js"></script>
-</body>
+    <script type="module" src="js/after-send.js"></script>
+    <script type="module" src="js/response-hands.js"></script>
+    <script type="module" src="js/revolt.js"></script>
+  </body>
 </html>

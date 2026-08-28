@@ -377,3 +377,8 @@ saveTherapyNotes.addEventListener("click", () => {
 updateIntensity();
 renderEntries();
 renderInsights();
+
+window.addEventListener("journal:updated", () => {
+  renderEntries();
+  renderInsights();
+});

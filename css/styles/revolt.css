@@ -1,0 +1,262 @@
+.revolt-section {
+  background: var(--bg-soft);
+}
+.revolt-container {
+  max-width: 1080px;
+}
+.revolt-intro {
+  max-width: 880px;
+  margin-bottom: 90px;
+}
+.revolt-subtitle {
+  color: var(--text) !important;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem !important;
+}
+.revolt-intro > small {
+  color: var(--accent);
+  font-weight: 700;
+}
+.revolt-path {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+.revolt-path span {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.revolt-path i {
+  color: var(--accent);
+}
+.revolt-path strong {
+  margin-top: 10px;
+  color: var(--accent);
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+.revolt-card, .revisit-unsent, .decision-check {
+  padding: clamp(28px, 5vw, 48px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+.revolt-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 20px 0;
+}
+.revolt-choices button {
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+.revolt-choices button.is-active {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+.revolt-four-grid, .sentence-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.revolt-four-grid label, .sentence-grid label {
+  font-weight: 700;
+}
+.revolt-four-grid small {
+  display: block;
+  min-height: 48px;
+  margin: 7px 0;
+  color: var(--muted);
+  font-weight: 400;
+}
+.revolt-four-grid textarea,
+.sentence-grid textarea,
+.revolt-register textarea,
+.revolt-register input,
+.unsent-tool textarea {
+  width: 100%;
+  margin-top: 8px;
+  padding: 15px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  resize: vertical;
+}
+.fact-interpret-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.fact-interpret-grid p {
+  margin: 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+.fact-interpret-grid b {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--accent);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.after-block > blockquote {
+  padding: 24px;
+  border-left: 3px solid var(--accent);
+  background: var(--surface);
+  font-family: "Playfair Display", serif;
+  font-size: 1.25rem;
+}
+.language-shifts p {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 18px;
+  border-bottom: 1px solid var(--line);
+}
+.language-shifts del {
+  color: var(--muted);
+}
+.language-shifts ins {
+  color: var(--text);
+  text-decoration: none;
+}
+.revolt-outburst, .unsent-tool, .anger-truth, .revolt-register {
+  margin-top: 100px;
+  padding: clamp(30px, 6vw, 58px);
+  border-radius: var(--radius-lg);
+  background: var(--dark);
+  color: #f8f2ed;
+}
+.revolt-outburst h3, .unsent-tool h3, .anger-truth h3 {
+  margin: 0 0 25px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+}
+.revolt-outburst textarea, .unsent-tool textarea {
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+}
+.range-field {
+  display: block;
+  margin: 25px 0;
+  font-weight: 700;
+}
+.range-field input {
+  width: 100%;
+  margin-top: 12px;
+  accent-color: var(--accent);
+}
+.revolt-big-question {
+  margin-top: 30px !important;
+  color: var(--accent);
+  font-size: 1.6rem !important;
+}
+.distinction-grid ul {
+  padding-left: 20px;
+  color: var(--muted);
+}
+.unsent-tool .button {
+  margin-top: 18px;
+}
+.separation-stage[hidden] {
+  display: none;
+}
+.revisit-unsent fieldset, .decision-check fieldset, .revolt-register fieldset {
+  margin: 20px 0;
+  padding: 0;
+  border: 0;
+}
+.revolt-four-grid label:last-child:nth-child(odd) {
+  grid-column: 1/-1;
+}
+.anger-truth strong {
+  display: block;
+  margin-top: 30px;
+  color: #f4c2b7;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+.decision-questions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.current-example dl {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+.current-example dt, .current-example dd {
+  margin: 0;
+  padding: 16px;
+  border-bottom: 1px solid var(--line);
+}
+.current-example dt {
+  color: var(--accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+.revolt-therapy > blockquote {
+  color: #f4c2b7;
+  font-family: "Playfair Display", serif;
+  font-size: 1.7rem;
+}
+.revolt-register label {
+  display: block;
+  margin: 18px 0;
+  font-weight: 700;
+}
+.revolt-register .revolt-choices button {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+.revolt-closing {
+  margin-top: 110px;
+  padding: 70px 30px;
+  text-align: center;
+}
+.revolt-closing h3 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+}
+.revolt-closing p {
+  color: var(--muted);
+}
+.revolt-closing strong {
+  display: block;
+  margin: 35px 0;
+  color: var(--accent);
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+@media (max-width: 720px) {
+  .revolt-four-grid, .sentence-grid, .fact-interpret-grid, .decision-questions {
+    grid-template-columns: 1fr;
+  }
+  .language-shifts p {
+    grid-template-columns: 1fr;
+  }
+  .current-example dl {
+    grid-template-columns: 1fr;
+  }
+  .revolt-four-grid label:last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+}
